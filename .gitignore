@@ -1,0 +1,14 @@
+# DFT 대용량 출력
+*.wfc*
+*.save/
+*.mix*
+WAVECAR
+CHG*
+*.hdf5
+# 슈도포텐셜 (라이선스/용량)
+*.UPF
+POTCAR
+# 파이썬
+__pycache__/
+*.pyc
+.ipynb_checkpoints/
