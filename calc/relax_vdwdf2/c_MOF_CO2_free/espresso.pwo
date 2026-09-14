@@ -6530,3 +6530,8 @@ O               10.7037327815       18.5389095733        4.6784023669
      iteration #  1     ecut=    60.00 Ry     beta= 0.30
      Davidson diagonalization with overlap
      ethr =  1.00E-06,  avg # of iterations =  2.0
+
+     Threshold (ethr) on eigenvalues was too large:
+     Diagonalizing with lowered threshold
+
+     Davidson diagonalization with overlap
