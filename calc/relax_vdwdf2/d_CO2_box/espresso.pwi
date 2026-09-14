@@ -1,0 +1,50 @@
+&CONTROL
+   calculation      = 'relax'
+   nstep            = 300
+   tprnfor          = .true.
+   outdir           = './tmp'
+   prefix           = 'd_CO2_box'
+   disk_io          = 'low'
+   pseudo_dir       = '/home/seyoung/pseudo'
+/
+&SYSTEM
+   ecutwfc          = 60
+   ecutrho          = 480
+   occupations      = 'fixed'
+   nspin            = 1
+   input_dft        = 'vdw-df2'
+   ntyp             = 2
+   nat              = 3
+   ibrav            = 0
+/
+&ELECTRONS
+   electron_maxstep = 200
+   conv_thr         = 1e-07
+   mixing_beta      = 0.3
+/
+&IONS
+   ion_dynamics     = 'bfgs'
+/
+&CELL
+/
+&FCP
+/
+&RISM
+/
+ATOMIC_SPECIES
+C 12.011 C.pbe-n-kjpaw_psl.1.0.0.UPF
+O 15.999 O.pbe-n-kjpaw_psl.0.1.UPF
+
+K_POINTS automatic
+1 1 1  0 0 0
+
+CELL_PARAMETERS angstrom
+15.00000000000000 0.00000000000000 0.00000000000000
+0.00000000000000 15.00000000000000 0.00000000000000
+0.00000000000000 0.00000000000000 15.00000000000000
+
+ATOMIC_POSITIONS angstrom
+C 7.5000000000 7.5000000000 7.5000000000  
+O 8.6600000000 7.5000000000 7.5000000000  
+O 6.3400000000 7.5000000000 7.5000000000  
+

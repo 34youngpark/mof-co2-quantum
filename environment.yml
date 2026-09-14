@@ -1,0 +1,9 @@
+name: mof
+channels:
+  - defaults
+dependencies:
+  - python=3.11
+  - qe
+  - scipy
+  - ase
+prefix: /home/seyoung/miniconda3/envs/mof
