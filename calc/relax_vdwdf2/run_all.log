@@ -3,3 +3,10 @@
 === b_MOF_CO2_bound 시작: Mon Sep 14 07:45:46 PM KST 2026
 === b_MOF_CO2_bound 종료: Mon Sep 14 08:48:59 PM KST 2026  0 done
 === c_MOF_CO2_free 시작: Mon Sep 14 08:49:00 PM KST 2026
+=== c_MOF_CO2_free 종료: Tue Sep 15 12:03:49 AM KST 2026  1 done
+=== a_MOF 시작: Tue Sep 15 10:39:01 AM KST 2026
+=== a_MOF 종료: Tue Sep 15 10:44:35 AM KST 2026  0 done
+=== b_MOF_CO2_bound 시작: Tue Sep 15 10:44:35 AM KST 2026
+=== b_MOF_CO2_bound 종료: Tue Sep 15 10:45:58 AM KST 2026  0 done
+=== c_MOF_CO2_free 시작: Tue Sep 15 10:45:59 AM KST 2026
+=== c_MOF_CO2_free 종료: Tue Sep 15 10:48:00 AM KST 2026  0 done
