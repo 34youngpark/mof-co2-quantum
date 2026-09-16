@@ -1,5 +1,5 @@
 
-     Program PWSCF v.7.5 starts on 15Sep2026 at 10:39: 4 
+     Program PWSCF v.7.5 starts on 16Sep2026 at 11: 5: 4 
 
      This program is part of the open-source Quantum ESPRESSO suite
      for quantum simulation of materials; please cite
@@ -15,7 +15,7 @@
      Threads/MPI process:                     2
 
      MPI processes distributed on     1 nodes
-     32663 MiB available memory on the printing compute node when the environment starts
+     31660 MiB available memory on the printing compute node when the environment starts
 
      Reading input from espresso.pwi
 Warning: card &CELL ignored
@@ -445,9 +445,9 @@ Warning: card &RISM ignored
      Starting wfcs are  558 randomized atomic wfcs
      Checking if some PAW data can be deallocated... 
 
-     total cpu time spent up to now is       50.1 secs
+     total cpu time spent up to now is       48.2 secs
 
-     per-process dynamical memory:   316.6 Mb
+     per-process dynamical memory:   316.0 Mb
 
      Self-consistent Calculation
 
@@ -457,7 +457,7 @@ Warning: card &RISM ignored
 
      negative rho (up, down):  1.624E-05 0.000E+00
 
-     total cpu time spent up to now is      130.7 secs
+     total cpu time spent up to now is      129.6 secs
 
      total energy              =   -2833.40785085 Ry
      estimated scf accuracy    <      28.00647843 Ry
@@ -468,14 +468,24 @@ Warning: card &RISM ignored
 
      negative rho (up, down):  4.172E-05 0.000E+00
 
-     total cpu time spent up to now is      194.5 secs
+     total cpu time spent up to now is      192.7 secs
 
      total energy              =   -2832.87516568 Ry
      estimated scf accuracy    <       6.09017247 Ry
 
      iteration #  3     ecut=    60.00 Ry     beta= 0.30
      Davidson diagonalization with overlap
---------------------------------------------------------------------------
-prterun noticed that process rank 15 with PID 131697 on node stl-Precision-7920-Tower exited on
-signal 15 (Terminated).
---------------------------------------------------------------------------
+     ethr =  1.03E-03,  avg # of iterations =  3.5
+
+     negative rho (up, down):  6.359E-05 0.000E+00
+
+     total cpu time spent up to now is      274.8 secs
+
+     total energy              =   -2833.87492026 Ry
+     estimated scf accuracy    <       1.11649378 Ry
+
+     iteration #  4     ecut=    60.00 Ry     beta= 0.30
+     Davidson diagonalization with overlap
+     ethr =  1.88E-04,  avg # of iterations =  2.5
+
+     negative rho (up, down):  1.115E-04 0.000E+00
