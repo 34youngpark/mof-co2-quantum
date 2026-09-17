@@ -11,7 +11,7 @@
    nosym            = .true.
    occupations      = 'fixed'
    nspin            = 1
-   input_dft        = 'pbe'
+   input_dft        = 'vdw-df'
    ntyp             = 5
    nat              = 216
    ibrav            = 0

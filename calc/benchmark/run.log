@@ -1,3 +1,76 @@
 === pbe/a_MOF 시작: Wed Sep 16 05:34:14 PM KST 2026
 === pbe/a_MOF 종료: Wed Sep 16 05:34:20 PM KST 2026  0 done
 === pbe/b_MOF_CO2_bound 시작: Wed Sep 16 05:34:20 PM KST 2026
+=== pbe/b_MOF_CO2_bound 종료: Wed Sep 16 05:51:40 PM KST 2026  1 done
+=== pbe/c_MOF_CO2_free 시작: Wed Sep 16 05:51:41 PM KST 2026
+=== pbe/c_MOF_CO2_free 종료: Wed Sep 16 05:51:46 PM KST 2026  0 done
+=== pbe/d_CO2_box 시작: Wed Sep 16 05:51:46 PM KST 2026
+=== pbe/d_CO2_box 종료: Wed Sep 16 05:53:32 PM KST 2026  1 done
+=== pbe-d3/a_MOF 시작: Wed Sep 16 05:53:33 PM KST 2026
+=== pbe-d3/a_MOF 종료: Wed Sep 16 05:53:38 PM KST 2026  0 done
+=== pbe-d3/b_MOF_CO2_bound 시작: Wed Sep 16 05:53:39 PM KST 2026
+=== pbe-d3/b_MOF_CO2_bound 종료: Wed Sep 16 06:09:48 PM KST 2026  1 done
+=== pbe-d3/c_MOF_CO2_free 시작: Wed Sep 16 06:09:49 PM KST 2026
+=== pbe-d3/c_MOF_CO2_free 종료: Wed Sep 16 06:09:55 PM KST 2026  0 done
+=== pbe-d3/d_CO2_box 시작: Wed Sep 16 06:09:55 PM KST 2026
+=== pbe-d3/d_CO2_box 종료: Wed Sep 16 06:11:51 PM KST 2026  1 done
+=== vdw-df/a_MOF 시작: Wed Sep 16 06:11:52 PM KST 2026
+=== vdw-df/a_MOF 종료: Wed Sep 16 06:11:57 PM KST 2026  0 done
+=== vdw-df/b_MOF_CO2_bound 시작: Wed Sep 16 06:11:58 PM KST 2026
+=== vdw-df/b_MOF_CO2_bound 종료: Wed Sep 16 06:29:09 PM KST 2026  1 done
+=== vdw-df/c_MOF_CO2_free 시작: Wed Sep 16 06:29:10 PM KST 2026
+=== vdw-df/c_MOF_CO2_free 종료: Wed Sep 16 06:29:15 PM KST 2026  0 done
+=== vdw-df/d_CO2_box 시작: Wed Sep 16 06:29:16 PM KST 2026
+=== vdw-df/d_CO2_box 종료: Wed Sep 16 06:32:05 PM KST 2026  1 done
+=== scan/a_MOF 시작: Wed Sep 16 06:32:06 PM KST 2026
+=== scan/a_MOF 종료: Wed Sep 16 06:32:09 PM KST 2026  0 done
+=== scan/b_MOF_CO2_bound 시작: Wed Sep 16 06:32:10 PM KST 2026
+=== scan/b_MOF_CO2_bound 종료: Wed Sep 16 06:32:13 PM KST 2026  0 done
+=== scan/c_MOF_CO2_free 시작: Wed Sep 16 06:32:14 PM KST 2026
+=== scan/c_MOF_CO2_free 종료: Wed Sep 16 06:32:17 PM KST 2026  0 done
+=== scan/d_CO2_box 시작: Wed Sep 16 06:32:18 PM KST 2026
+=== scan/d_CO2_box 종료: Wed Sep 16 06:32:20 PM KST 2026  0 done
+=== pbe/a_MOF 시작: Wed Sep 16 06:35:12 PM KST 2026
+=== pbe/a_MOF 종료: Wed Sep 16 06:35:17 PM KST 2026  0 done
+=== pbe/c_MOF_CO2_free 시작: Wed Sep 16 06:35:18 PM KST 2026
+=== pbe/c_MOF_CO2_free 종료: Wed Sep 16 06:35:23 PM KST 2026  0 done
+=== pbe-d3/a_MOF 시작: Wed Sep 16 06:35:24 PM KST 2026
+=== pbe-d3/a_MOF 종료: Wed Sep 16 06:35:29 PM KST 2026  0 done
+=== pbe-d3/c_MOF_CO2_free 시작: Wed Sep 16 06:35:30 PM KST 2026
+=== pbe-d3/c_MOF_CO2_free 종료: Wed Sep 16 06:35:35 PM KST 2026  0 done
+=== vdw-df/a_MOF 시작: Wed Sep 16 06:35:36 PM KST 2026
+=== vdw-df/a_MOF 종료: Wed Sep 16 06:35:41 PM KST 2026  0 done
+=== vdw-df/c_MOF_CO2_free 시작: Wed Sep 16 06:35:42 PM KST 2026
+=== vdw-df/c_MOF_CO2_free 종료: Wed Sep 16 06:35:47 PM KST 2026  0 done
+=== scan/a_MOF 시작: Wed Sep 16 06:35:48 PM KST 2026
+=== scan/a_MOF 종료: Wed Sep 16 06:35:51 PM KST 2026  0 done
+=== scan/b_MOF_CO2_bound 시작: Wed Sep 16 06:35:52 PM KST 2026
+=== scan/b_MOF_CO2_bound 종료: Wed Sep 16 06:35:55 PM KST 2026  0 done
+=== scan/c_MOF_CO2_free 시작: Wed Sep 16 06:35:56 PM KST 2026
+=== scan/c_MOF_CO2_free 종료: Wed Sep 16 06:35:59 PM KST 2026  0 done
+=== scan/d_CO2_box 시작: Wed Sep 16 06:36:00 PM KST 2026
+=== scan/d_CO2_box 종료: Wed Sep 16 06:36:02 PM KST 2026  0 done
+=== pbe/a_MOF 시작: Thu Sep 17 12:40:10 PM KST 2026
+=== pbe/a_MOF 종료: Thu Sep 17 12:40:10 PM KST 2026  0 done
+=== pbe/c_MOF_CO2_free 시작: Thu Sep 17 12:40:10 PM KST 2026
+=== pbe/c_MOF_CO2_free 종료: Thu Sep 17 12:40:10 PM KST 2026  0 done
+=== pbe-d3/a_MOF 시작: Thu Sep 17 12:40:10 PM KST 2026
+=== pbe-d3/a_MOF 종료: Thu Sep 17 12:40:10 PM KST 2026  0 done
+=== pbe-d3/c_MOF_CO2_free 시작: Thu Sep 17 12:40:10 PM KST 2026
+=== pbe-d3/c_MOF_CO2_free 종료: Thu Sep 17 12:40:10 PM KST 2026  0 done
+=== vdw-df/a_MOF 시작: Thu Sep 17 12:40:10 PM KST 2026
+=== vdw-df/a_MOF 종료: Thu Sep 17 12:40:10 PM KST 2026  0 done
+=== vdw-df/c_MOF_CO2_free 시작: Thu Sep 17 12:40:10 PM KST 2026
+=== vdw-df/c_MOF_CO2_free 종료: Thu Sep 17 12:40:10 PM KST 2026  0 done
+=== pbe/a_MOF 시작: Thu Sep 17 12:41:10 PM KST 2026
+=== pbe/a_MOF 종료: Thu Sep 17 12:58:56 PM KST 2026  1 done
+=== pbe/c_MOF_CO2_free 시작: Thu Sep 17 12:58:57 PM KST 2026
+=== pbe/c_MOF_CO2_free 종료: Thu Sep 17 01:17:29 PM KST 2026  1 done
+=== pbe-d3/a_MOF 시작: Thu Sep 17 01:17:29 PM KST 2026
+=== pbe-d3/a_MOF 종료: Thu Sep 17 01:35:16 PM KST 2026  1 done
+=== pbe-d3/c_MOF_CO2_free 시작: Thu Sep 17 01:35:16 PM KST 2026
+=== pbe-d3/c_MOF_CO2_free 종료: Thu Sep 17 01:53:33 PM KST 2026  1 done
+=== vdw-df/a_MOF 시작: Thu Sep 17 01:53:34 PM KST 2026
+=== vdw-df/a_MOF 종료: Thu Sep 17 02:10:40 PM KST 2026  1 done
+=== vdw-df/c_MOF_CO2_free 시작: Thu Sep 17 02:10:41 PM KST 2026
+=== vdw-df/c_MOF_CO2_free 종료: Thu Sep 17 02:29:31 PM KST 2026  1 done

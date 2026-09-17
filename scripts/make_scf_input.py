@@ -29,7 +29,8 @@ kpts = (1, 1, 1) if name.startswith("d_") else (1, 1, 2)
 input_data = {
     "control":   {"calculation": "scf", "prefix": name, "outdir": "./tmp",
                   "pseudo_dir": os.path.expanduser("~/pseudo"), "disk_io": "none"},
-    "system":    {"ecutwfc": 60, "ecutrho": 480, "nspin": 1, "occupations": "fixed", **FUNC[func]},
+    "system":    {"ecutwfc": 60, "ecutrho": 480, "nspin": 1, "occupations": "fixed",
+                  "nosym": True, **FUNC[func]},
     "electrons": {"conv_thr": 1e-7, "mixing_beta": 0.3, "electron_maxstep": 200},
 }
 write(f"{outdir}/espresso.pwi", atoms, format="espresso-in",

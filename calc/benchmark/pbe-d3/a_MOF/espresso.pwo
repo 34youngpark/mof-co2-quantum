@@ -1,5 +1,5 @@
 
-     Program PWSCF v.7.5 starts on 17Sep2026 at 12:41:13 
+     Program PWSCF v.7.5 starts on 17Sep2026 at 13:17:32 
 
      This program is part of the open-source Quantum ESPRESSO suite
      for quantum simulation of materials; please cite
@@ -15,7 +15,7 @@
      Threads/MPI process:                     2
 
      MPI processes distributed on     1 nodes
-     30077 MiB available memory on the printing compute node when the environment starts
+     23657 MiB available memory on the printing compute node when the environment starts
 
      Reading input from espresso.pwi
 Warning: card &CELL ignored
@@ -380,6 +380,253 @@ Warning: card &RISM ignored
        215        N      tau( 215) = (   0.4801274   0.4354595   0.1924306  )
        216        N      tau( 216) = (   0.3828173   0.1980727   0.2988556  )
 
+     --------------------------------------------
+     DFT-D3 Dispersion Correction (3-body terms):
+     --------------------------------------------
+       Reference C6 values for interpolation: 
+
+         atom   Coordination number   C6
+         H          0.912             6.05
+         H          0.000            15.18
+         C          0.000            98.23
+         C          0.987            86.49
+         C          1.998            58.72
+         C          2.999            51.56
+         C          3.984            36.41
+         N          0.000            50.54
+         N          0.994            44.25
+         N          2.014            39.35
+         N          2.990            31.16
+         O          0.000            31.01
+         O          0.993            25.63
+         O          1.989            20.74
+         Mg         0.000          1366.75
+         Mg         0.963           902.54
+         Mg         1.950           351.12
+
+       Values used:
+
+         atom   Coordination number  R0_AB[au]  C6      C8
+         Mg         8.057            3.292    351.12  31436.69
+         Mg         8.057            3.292    351.12  31436.69
+         Mg         8.057            3.292    351.12  31436.69
+         Mg         8.057            3.292    351.12  31436.69
+         Mg         8.057            3.292    351.12  31436.69
+         Mg         8.057            3.292    351.12  31436.69
+         O          2.995            2.345     20.74    418.58
+         O          2.995            2.345     20.74    418.58
+         O          2.995            2.345     20.74    418.58
+         O          2.995            2.345     20.74    418.58
+         O          2.995            2.345     20.74    418.58
+         O          2.995            2.345     20.74    418.58
+         O          2.982            2.345     20.74    418.58
+         O          2.982            2.345     20.74    418.58
+         O          2.982            2.345     20.74    418.58
+         O          2.982            2.345     20.74    418.58
+         O          2.982            2.345     20.74    418.58
+         O          2.982            2.345     20.74    418.58
+         O          2.037            2.345     20.80    419.74
+         O          2.037            2.345     20.80    419.74
+         O          2.037            2.345     20.80    419.74
+         O          2.037            2.345     20.80    419.74
+         O          2.037            2.345     20.80    419.74
+         O          2.037            2.345     20.80    419.74
+         H          1.008            2.062      6.17     74.63
+         H          1.008            2.062      6.17     74.63
+         H          1.008            2.062      6.17     74.63
+         H          1.008            2.062      6.17     74.63
+         H          1.008            2.062      6.17     74.63
+         H          1.008            2.062      6.17     74.63
+         H          1.006            2.062      6.18     74.65
+         H          1.006            2.062      6.18     74.65
+         H          1.006            2.062      6.18     74.65
+         H          1.006            2.062      6.18     74.65
+         H          1.006            2.062      6.18     74.65
+         H          1.006            2.062      6.18     74.65
+         H          1.007            2.062      6.17     74.64
+         H          1.007            2.062      6.17     74.64
+         H          1.007            2.062      6.17     74.64
+         H          1.007            2.062      6.17     74.64
+         H          1.007            2.062      6.17     74.64
+         H          1.007            2.062      6.17     74.64
+         H          1.005            2.062      6.18     74.66
+         H          1.005            2.062      6.18     74.66
+         H          1.005            2.062      6.18     74.66
+         H          1.005            2.062      6.18     74.66
+         H          1.005            2.062      6.18     74.66
+         H          1.005            2.062      6.18     74.66
+         H          1.016            2.062      6.17     74.55
+         H          1.016            2.062      6.17     74.55
+         H          1.016            2.062      6.17     74.55
+         H          1.016            2.062      6.17     74.55
+         H          1.016            2.062      6.17     74.55
+         H          1.016            2.062      6.17     74.55
+         H          1.000            2.062      6.18     74.72
+         H          1.000            2.062      6.18     74.72
+         H          1.000            2.062      6.18     74.72
+         H          1.000            2.062      6.18     74.72
+         H          1.000            2.062      6.18     74.72
+         H          1.000            2.062      6.18     74.72
+         H          1.004            2.062      6.18     74.68
+         H          1.004            2.062      6.18     74.68
+         H          1.004            2.062      6.18     74.68
+         H          1.004            2.062      6.18     74.68
+         H          1.004            2.062      6.18     74.68
+         H          1.004            2.062      6.18     74.68
+         H          1.004            2.062      6.18     74.68
+         H          1.004            2.062      6.18     74.68
+         H          1.004            2.062      6.18     74.68
+         H          1.004            2.062      6.18     74.68
+         H          1.004            2.062      6.18     74.68
+         H          1.004            2.062      6.18     74.68
+         H          1.004            2.062      6.18     74.68
+         H          1.004            2.062      6.18     74.68
+         H          1.004            2.062      6.18     74.68
+         H          1.004            2.062      6.18     74.68
+         H          1.004            2.062      6.18     74.68
+         H          1.004            2.062      6.18     74.68
+         H          1.004            2.062      6.18     74.68
+         H          1.004            2.062      6.18     74.68
+         H          1.004            2.062      6.18     74.68
+         H          1.004            2.062      6.18     74.68
+         H          1.004            2.062      6.18     74.68
+         H          1.004            2.062      6.18     74.68
+         H          1.002            2.062      6.18     74.70
+         H          1.002            2.062      6.18     74.70
+         H          1.002            2.062      6.18     74.70
+         H          1.002            2.062      6.18     74.70
+         H          1.002            2.062      6.18     74.70
+         H          1.002            2.062      6.18     74.70
+         H          1.003            2.062      6.18     74.68
+         H          1.003            2.062      6.18     74.68
+         H          1.003            2.062      6.18     74.68
+         H          1.003            2.062      6.18     74.68
+         H          1.003            2.062      6.18     74.68
+         H          1.003            2.062      6.18     74.68
+         H          1.003            2.062      6.18     74.69
+         H          1.003            2.062      6.18     74.69
+         H          1.003            2.062      6.18     74.69
+         H          1.003            2.062      6.18     74.69
+         H          1.003            2.062      6.18     74.69
+         H          1.003            2.062      6.18     74.69
+         H          1.013            2.062      6.17     74.59
+         H          1.013            2.062      6.17     74.59
+         H          1.013            2.062      6.17     74.59
+         H          1.013            2.062      6.17     74.59
+         H          1.013            2.062      6.17     74.59
+         H          1.013            2.062      6.17     74.59
+         H          1.005            2.062      6.18     74.66
+         H          1.005            2.062      6.18     74.66
+         H          1.005            2.062      6.18     74.66
+         H          1.005            2.062      6.18     74.66
+         H          1.005            2.062      6.18     74.66
+         H          1.005            2.062      6.18     74.66
+         H          1.042            2.062      6.15     74.31
+         H          1.042            2.062      6.15     74.31
+         H          1.042            2.062      6.15     74.31
+         H          1.042            2.062      6.15     74.31
+         H          1.042            2.062      6.15     74.31
+         H          1.042            2.062      6.15     74.31
+         H          1.028            2.062      6.16     74.44
+         H          1.028            2.062      6.16     74.44
+         H          1.028            2.062      6.16     74.44
+         H          1.028            2.062      6.16     74.44
+         H          1.028            2.062      6.16     74.44
+         H          1.028            2.062      6.16     74.44
+         C          3.375            2.750     46.89   1356.08
+         C          3.375            2.750     46.89   1356.08
+         C          3.375            2.750     46.89   1356.08
+         C          3.375            2.750     46.89   1356.08
+         C          3.375            2.750     46.89   1356.08
+         C          3.375            2.750     46.89   1356.08
+         C          3.215            2.750     49.88   1442.71
+         C          3.215            2.750     49.88   1442.71
+         C          3.215            2.750     49.88   1442.71
+         C          3.215            2.750     49.88   1442.71
+         C          3.215            2.750     49.88   1442.71
+         C          3.215            2.750     49.88   1442.71
+         C          3.213            2.750     49.90   1443.28
+         C          3.213            2.750     49.90   1443.28
+         C          3.213            2.750     49.90   1443.28
+         C          3.213            2.750     49.90   1443.28
+         C          3.213            2.750     49.90   1443.28
+         C          3.213            2.750     49.90   1443.28
+         C          3.183            2.750     50.23   1452.82
+         C          3.183            2.750     50.23   1452.82
+         C          3.183            2.750     50.23   1452.82
+         C          3.183            2.750     50.23   1452.82
+         C          3.183            2.750     50.23   1452.82
+         C          3.183            2.750     50.23   1452.82
+         C          3.166            2.750     50.40   1457.60
+         C          3.166            2.750     50.40   1457.60
+         C          3.166            2.750     50.40   1457.60
+         C          3.166            2.750     50.40   1457.60
+         C          3.166            2.750     50.40   1457.60
+         C          3.166            2.750     50.40   1457.60
+         C          3.157            2.750     50.48   1459.86
+         C          3.157            2.750     50.48   1459.86
+         C          3.157            2.750     50.48   1459.86
+         C          3.157            2.750     50.48   1459.86
+         C          3.157            2.750     50.48   1459.86
+         C          3.157            2.750     50.48   1459.86
+         C          3.401            2.750     46.18   1335.61
+         C          3.401            2.750     46.18   1335.61
+         C          3.401            2.750     46.18   1335.61
+         C          3.401            2.750     46.18   1335.61
+         C          3.401            2.750     46.18   1335.61
+         C          3.401            2.750     46.18   1335.61
+         C          4.106            2.750     36.52   1056.14
+         C          4.106            2.750     36.52   1056.14
+         C          4.106            2.750     36.52   1056.14
+         C          4.106            2.750     36.52   1056.14
+         C          4.106            2.750     36.52   1056.14
+         C          4.106            2.750     36.52   1056.14
+         C          4.079            2.750     36.54   1056.86
+         C          4.079            2.750     36.54   1056.86
+         C          4.079            2.750     36.54   1056.86
+         C          4.079            2.750     36.54   1056.86
+         C          4.079            2.750     36.54   1056.86
+         C          4.079            2.750     36.54   1056.86
+         C          4.060            2.750     36.56   1057.45
+         C          4.060            2.750     36.56   1057.45
+         C          4.060            2.750     36.56   1057.45
+         C          4.060            2.750     36.56   1057.45
+         C          4.060            2.750     36.56   1057.45
+         C          4.060            2.750     36.56   1057.45
+         C          4.089            2.750     36.53   1056.57
+         C          4.089            2.750     36.53   1056.57
+         C          4.089            2.750     36.53   1056.57
+         C          4.089            2.750     36.53   1056.57
+         C          4.089            2.750     36.53   1056.57
+         C          4.089            2.750     36.53   1056.57
+         C          4.060            2.750     36.56   1057.45
+         C          4.060            2.750     36.56   1057.45
+         C          4.060            2.750     36.56   1057.45
+         C          4.060            2.750     36.56   1057.45
+         C          4.060            2.750     36.56   1057.45
+         C          4.060            2.750     36.56   1057.45
+         C          4.115            2.750     36.51   1055.95
+         C          4.115            2.750     36.51   1055.95
+         C          4.115            2.750     36.51   1055.95
+         C          4.115            2.750     36.51   1055.95
+         C          4.115            2.750     36.51   1055.95
+         C          4.115            2.750     36.51   1055.95
+         N          3.107            2.478     31.23    688.98
+         N          3.107            2.478     31.23    688.98
+         N          3.107            2.478     31.23    688.98
+         N          3.107            2.478     31.23    688.98
+         N          3.107            2.478     31.23    688.98
+         N          3.107            2.478     31.23    688.98
+         N          3.965            2.478     31.16    687.49
+         N          3.965            2.478     31.16    687.49
+         N          3.965            2.478     31.16    687.49
+         N          3.965            2.478     31.16    687.49
+         N          3.965            2.478     31.16    687.49
+         N          3.965            2.478     31.16    687.49
+
+         Molecular C6 ( Ry / a.u.^6 ) =   1032672.22
+
+
      number of k points=     2
                        cart. coord. in units 2pi/alat
         k(    1) = (   0.0000000   0.0000000   0.0000000), wk =   1.0000000
@@ -403,9 +650,9 @@ Warning: card &RISM ignored
      Starting wfcs are  558 randomized atomic wfcs
      Checking if some PAW data can be deallocated... 
 
-     total cpu time spent up to now is       34.0 secs
+     total cpu time spent up to now is       35.7 secs
 
-     per-process dynamical memory:   314.0 Mb
+     per-process dynamical memory:   319.9 Mb
 
      Self-consistent Calculation
 
@@ -415,9 +662,9 @@ Warning: card &RISM ignored
 
      negative rho (up, down):  1.459E-05 0.000E+00
 
-     total cpu time spent up to now is       98.0 secs
+     total cpu time spent up to now is      109.3 secs
 
-     total energy              =   -2754.35876166 Ry
+     total energy              =   -2755.03018080 Ry
      estimated scf accuracy    <      23.95451302 Ry
 
      iteration #  2     ecut=    60.00 Ry     beta= 0.30
@@ -426,9 +673,9 @@ Warning: card &RISM ignored
 
      negative rho (up, down):  3.786E-05 0.000E+00
 
-     total cpu time spent up to now is      151.8 secs
+     total cpu time spent up to now is      166.9 secs
 
-     total energy              =   -2753.69093101 Ry
+     total energy              =   -2754.36235015 Ry
      estimated scf accuracy    <       5.44535625 Ry
 
      iteration #  3     ecut=    60.00 Ry     beta= 0.30
@@ -437,9 +684,9 @@ Warning: card &RISM ignored
 
      negative rho (up, down):  6.396E-05 0.000E+00
 
-     total cpu time spent up to now is      216.1 secs
+     total cpu time spent up to now is      231.9 secs
 
-     total energy              =   -2754.52503663 Ry
+     total energy              =   -2755.19645577 Ry
      estimated scf accuracy    <       0.91587222 Ry
 
      iteration #  4     ecut=    60.00 Ry     beta= 0.30
@@ -448,9 +695,9 @@ Warning: card &RISM ignored
 
      negative rho (up, down):  1.102E-04 0.000E+00
 
-     total cpu time spent up to now is      274.1 secs
+     total cpu time spent up to now is      284.8 secs
 
-     total energy              =   -2754.55673502 Ry
+     total energy              =   -2755.22815416 Ry
      estimated scf accuracy    <       0.19549055 Ry
 
      iteration #  5     ecut=    60.00 Ry     beta= 0.30
@@ -459,9 +706,9 @@ Warning: card &RISM ignored
 
      negative rho (up, down):  1.151E-04 0.000E+00
 
-     total cpu time spent up to now is      335.4 secs
+     total cpu time spent up to now is      348.4 secs
 
-     total energy              =   -2754.56904339 Ry
+     total energy              =   -2755.24046254 Ry
      estimated scf accuracy    <       0.04059621 Ry
 
      iteration #  6     ecut=    60.00 Ry     beta= 0.30
@@ -470,9 +717,9 @@ Warning: card &RISM ignored
 
      negative rho (up, down):  1.208E-04 0.000E+00
 
-     total cpu time spent up to now is      406.6 secs
+     total cpu time spent up to now is      419.1 secs
 
-     total energy              =   -2754.57839993 Ry
+     total energy              =   -2755.24981907 Ry
      estimated scf accuracy    <       0.00827299 Ry
 
      iteration #  7     ecut=    60.00 Ry     beta= 0.30
@@ -481,9 +728,9 @@ Warning: card &RISM ignored
 
      negative rho (up, down):  1.244E-04 0.000E+00
 
-     total cpu time spent up to now is      468.9 secs
+     total cpu time spent up to now is      482.5 secs
 
-     total energy              =   -2754.57954836 Ry
+     total energy              =   -2755.25096750 Ry
      estimated scf accuracy    <       0.00147427 Ry
 
      iteration #  8     ecut=    60.00 Ry     beta= 0.30
@@ -492,9 +739,9 @@ Warning: card &RISM ignored
 
      negative rho (up, down):  1.245E-04 0.000E+00
 
-     total cpu time spent up to now is      543.2 secs
+     total cpu time spent up to now is      564.4 secs
 
-     total energy              =   -2754.57994639 Ry
+     total energy              =   -2755.25136553 Ry
      estimated scf accuracy    <       0.00040483 Ry
 
      iteration #  9     ecut=    60.00 Ry     beta= 0.30
@@ -503,9 +750,9 @@ Warning: card &RISM ignored
 
      negative rho (up, down):  1.250E-04 0.000E+00
 
-     total cpu time spent up to now is      608.7 secs
+     total cpu time spent up to now is      631.3 secs
 
-     total energy              =   -2754.57999877 Ry
+     total energy              =   -2755.25141792 Ry
      estimated scf accuracy    <       0.00003776 Ry
 
      iteration # 10     ecut=    60.00 Ry     beta= 0.30
@@ -514,9 +761,9 @@ Warning: card &RISM ignored
 
      negative rho (up, down):  1.254E-04 0.000E+00
 
-     total cpu time spent up to now is      685.2 secs
+     total cpu time spent up to now is      706.3 secs
 
-     total energy              =   -2754.58000838 Ry
+     total energy              =   -2755.25142752 Ry
      estimated scf accuracy    <       0.00001335 Ry
 
      iteration # 11     ecut=    60.00 Ry     beta= 0.30
@@ -525,9 +772,9 @@ Warning: card &RISM ignored
 
      negative rho (up, down):  1.256E-04 0.000E+00
 
-     total cpu time spent up to now is      761.8 secs
+     total cpu time spent up to now is      780.6 secs
 
-     total energy              =   -2754.58001209 Ry
+     total energy              =   -2755.25143123 Ry
      estimated scf accuracy    <       0.00000342 Ry
 
      iteration # 12     ecut=    60.00 Ry     beta= 0.30
@@ -536,9 +783,9 @@ Warning: card &RISM ignored
 
      negative rho (up, down):  1.258E-04 0.000E+00
 
-     total cpu time spent up to now is      821.2 secs
+     total cpu time spent up to now is      837.7 secs
 
-     total energy              =   -2754.58001201 Ry
+     total energy              =   -2755.25143115 Ry
      estimated scf accuracy    <       0.00000085 Ry
 
      iteration # 13     ecut=    60.00 Ry     beta= 0.30
@@ -547,9 +794,9 @@ Warning: card &RISM ignored
 
      negative rho (up, down):  1.260E-04 0.000E+00
 
-     total cpu time spent up to now is      905.5 secs
+     total cpu time spent up to now is      917.7 secs
 
-     total energy              =   -2754.58001242 Ry
+     total energy              =   -2755.25143156 Ry
      estimated scf accuracy    <       0.00000054 Ry
 
      iteration # 14     ecut=    60.00 Ry     beta= 0.30
@@ -558,9 +805,9 @@ Warning: card &RISM ignored
 
      negative rho (up, down):  1.261E-04 0.000E+00
 
-     total cpu time spent up to now is      968.9 secs
+     total cpu time spent up to now is      975.6 secs
 
-     total energy              =   -2754.58001244 Ry
+     total energy              =   -2755.25143158 Ry
      estimated scf accuracy    <       0.00000011 Ry
 
      iteration # 15     ecut=    60.00 Ry     beta= 0.30
@@ -569,7 +816,7 @@ Warning: card &RISM ignored
 
      negative rho (up, down):  1.265E-04 0.000E+00
 
-     total cpu time spent up to now is     1062.2 secs
+     total cpu time spent up to now is     1062.8 secs
 
      End of self-consistent calculation
 
@@ -657,7 +904,7 @@ Warning: card &RISM ignored
 
      highest occupied level (ev):    -0.3822
 
-!    total energy              =   -2754.58001249 Ry
+!    total energy              =   -2755.25143163 Ry
      estimated scf accuracy    <       0.00000004 Ry
 
      The total energy is the sum of the following terms:
@@ -665,61 +912,75 @@ Warning: card &RISM ignored
      hartree contribution      =    3418.20980030 Ry
      xc contribution           =    -644.71498313 Ry
      ewald contribution        =    1776.98755846 Ry
+     DFT-D3 Dispersion         =      -0.67141914 Ry
      one-center paw contrib.   =    -839.68326316 Ry
 
      convergence has been achieved in  15 iterations
      Message from routine punch:
      Nothing written, as per user request (disk_io='none')
 
-     init_run     :     53.64s CPU     33.75s WALL (       1 calls)
-     electrons    :   1706.07s CPU   1028.23s WALL (       1 calls)
+     init_run     :     56.49s CPU     35.45s WALL (       1 calls)
+     electrons    :   1708.09s CPU   1027.16s WALL (       1 calls)
 
      Called by init_run:
-     wfcinit      :     46.00s CPU     26.76s WALL (       1 calls)
-     potinit      :      2.12s CPU      1.57s WALL (       1 calls)
-     hinit0       :      1.43s CPU      1.17s WALL (       1 calls)
+     wfcinit      :     49.34s CPU     28.88s WALL (       1 calls)
+     potinit      :      1.92s CPU      1.36s WALL (       1 calls)
+     hinit0       :      1.23s CPU      0.97s WALL (       1 calls)
 
      Called by electrons:
-     c_bands      :   1432.18s CPU    827.20s WALL (      15 calls)
-     sum_band     :    207.66s CPU    142.57s WALL (      15 calls)
-     v_of_rho     :     14.13s CPU     10.90s WALL (      16 calls)
-     newd         :     38.50s CPU     39.83s WALL (      16 calls)
-     PAW_pot      :     14.31s CPU      8.65s WALL (      16 calls)
-     mix_rho      :      1.79s CPU      1.49s WALL (      15 calls)
+     c_bands      :   1428.60s CPU    821.47s WALL (      15 calls)
+     sum_band     :    208.15s CPU    142.58s WALL (      15 calls)
+     v_of_rho     :     14.00s CPU     10.82s WALL (      16 calls)
+     newd         :     39.08s CPU     39.98s WALL (      16 calls)
+     PAW_pot      :     14.60s CPU      8.95s WALL (      16 calls)
+     mix_rho      :      1.78s CPU      1.46s WALL (      15 calls)
+     energy_dftd3 :      4.00s CPU      4.00s WALL (       1 calls)
 
      Called by c_bands:
-     init_us_2    :     11.60s CPU     11.60s WALL (      62 calls)
-     cegterg      :   1420.99s CPU    816.06s WALL (      30 calls)
+     init_us_2    :     11.86s CPU     11.93s WALL (      62 calls)
+     cegterg      :   1417.32s CPU    810.18s WALL (      30 calls)
 
      Called by *egterg:
-     cdiaghg      :     31.29s CPU     16.95s WALL (     165 calls)
-     h_psi        :    853.27s CPU    500.81s WALL (     167 calls)
-     s_psi        :    116.54s CPU     59.80s WALL (     167 calls)
-     g_psi        :      3.33s CPU      1.69s WALL (     135 calls)
+     cdiaghg      :     29.31s CPU     15.45s WALL (     165 calls)
+     h_psi        :    858.36s CPU    498.90s WALL (     167 calls)
+     s_psi        :    116.91s CPU     59.39s WALL (     167 calls)
+     g_psi        :      3.23s CPU      1.70s WALL (     135 calls)
 
      Called by h_psi:
-     h_psi:calbec :    145.50s CPU     76.93s WALL (     167 calls)
-     vloc_psi     :    587.66s CPU    360.72s WALL (     167 calls)
+     h_psi:calbec :    147.26s CPU     77.90s WALL (     167 calls)
+     vloc_psi     :    591.04s CPU    358.02s WALL (     167 calls)
                                         0.00s GPU  (     167 calls)
-     add_vuspsi   :    115.97s CPU     59.61s WALL (     167 calls)
+     add_vuspsi   :    115.64s CPU     59.32s WALL (     167 calls)
 
      General routines
-     calbec       :    189.33s CPU     99.78s WALL (     197 calls)
-     fft          :     13.04s CPU     10.79s WALL (     206 calls)
-     ffts         :      1.09s CPU      0.91s WALL (      31 calls)
-     fftw         :    638.83s CPU    398.03s WALL (   61580 calls)
-     interpolate  :      1.44s CPU      1.18s WALL (      16 calls)
+     calbec       :    191.81s CPU    101.00s WALL (     197 calls)
+     fft          :     13.36s CPU     11.12s WALL (     206 calls)
+     ffts         :      1.12s CPU      0.91s WALL (      31 calls)
+     fftw         :    632.35s CPU    393.28s WALL (   61580 calls)
+     interpolate  :      1.44s CPU      1.15s WALL (      16 calls)
 
      Parallel routines
 
-     PWSCF        :  29m19.98s CPU  17m42.35s WALL
+     PWSCF        :  29m24.84s CPU  17m42.98s WALL
 
 
-   This run was terminated on:  12:58:55  17Sep2026            
+   This run was terminated on:  13:35:15  17Sep2026            
 
 =------------------------------------------------------------------------------=
    JOB DONE.
 =------------------------------------------------------------------------------=
+Note: The following floating-point exceptions are signalling: IEEE_INVALID_FLAG
+Note: The following floating-point exceptions are signalling: IEEE_INVALID_FLAG
+Note: The following floating-point exceptions are signalling: IEEE_INVALID_FLAG
+Note: The following floating-point exceptions are signalling: IEEE_INVALID_FLAG
+Note: The following floating-point exceptions are signalling: IEEE_INVALID_FLAG
+Note: The following floating-point exceptions are signalling: IEEE_INVALID_FLAG
+Note: The following floating-point exceptions are signalling: IEEE_INVALID_FLAG
+Note: The following floating-point exceptions are signalling: IEEE_INVALID_FLAG
+Note: The following floating-point exceptions are signalling: IEEE_INVALID_FLAG
+Note: The following floating-point exceptions are signalling: IEEE_INVALID_FLAG
+Note: The following floating-point exceptions are signalling: IEEE_INVALID_FLAG
+Note: The following floating-point exceptions are signalling: IEEE_INVALID_FLAG
 Note: The following floating-point exceptions are signalling: IEEE_INVALID_FLAG IEEE_UNDERFLOW_FLAG IEEE_DENORMAL
 Note: The following floating-point exceptions are signalling: IEEE_INVALID_FLAG
 Note: The following floating-point exceptions are signalling: IEEE_INVALID_FLAG
@@ -727,20 +988,8 @@ Note: The following floating-point exceptions are signalling: IEEE_INVALID_FLAG 
 Note: The following floating-point exceptions are signalling: IEEE_INVALID_FLAG IEEE_UNDERFLOW_FLAG IEEE_DENORMAL
 Note: The following floating-point exceptions are signalling: IEEE_INVALID_FLAG IEEE_UNDERFLOW_FLAG IEEE_DENORMAL
 Note: The following floating-point exceptions are signalling: IEEE_INVALID_FLAG
+Note: The following floating-point exceptions are signalling: IEEE_INVALID_FLAG
+Note: The following floating-point exceptions are signalling: IEEE_INVALID_FLAG
+Note: The following floating-point exceptions are signalling: IEEE_INVALID_FLAG
+Note: The following floating-point exceptions are signalling: IEEE_INVALID_FLAG
 Note: The following floating-point exceptions are signalling: IEEE_INVALID_FLAG IEEE_UNDERFLOW_FLAG IEEE_DENORMAL
-Note: The following floating-point exceptions are signalling: IEEE_INVALID_FLAG
-Note: The following floating-point exceptions are signalling: IEEE_INVALID_FLAG
-Note: The following floating-point exceptions are signalling: IEEE_INVALID_FLAG
-Note: The following floating-point exceptions are signalling: IEEE_INVALID_FLAG
-Note: The following floating-point exceptions are signalling: IEEE_INVALID_FLAG
-Note: The following floating-point exceptions are signalling: IEEE_INVALID_FLAG
-Note: The following floating-point exceptions are signalling: IEEE_INVALID_FLAG
-Note: The following floating-point exceptions are signalling: IEEE_INVALID_FLAG
-Note: The following floating-point exceptions are signalling: IEEE_INVALID_FLAG
-Note: The following floating-point exceptions are signalling: IEEE_INVALID_FLAG
-Note: The following floating-point exceptions are signalling: IEEE_INVALID_FLAG
-Note: The following floating-point exceptions are signalling: IEEE_INVALID_FLAG
-Note: The following floating-point exceptions are signalling: IEEE_INVALID_FLAG
-Note: The following floating-point exceptions are signalling: IEEE_INVALID_FLAG
-Note: The following floating-point exceptions are signalling: IEEE_INVALID_FLAG
-Note: The following floating-point exceptions are signalling: IEEE_INVALID_FLAG

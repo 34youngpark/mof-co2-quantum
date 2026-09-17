@@ -2,7 +2,7 @@
 # 범함수 × 구조 4개 scf. 이미 JOB DONE 이면 건너뜀.
 cd ~/mof-co2-quantum
 if [ "$(pgrep -c pw.x)" -gt 0 ]; then echo "pw.x 실행 중. 중단."; exit 1; fi
-for func in pbe pbe-d3 vdw-df scan; do
+for func in pbe pbe-d3 vdw-df; do
   for name in a_MOF b_MOF_CO2_bound c_MOF_CO2_free d_CO2_box; do
     d=calc/benchmark/$func/$name
     if grep -q "JOB DONE" $d/espresso.pwo 2>/dev/null; then continue; fi

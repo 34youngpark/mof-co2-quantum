@@ -8,10 +8,9 @@
 &SYSTEM
    ecutwfc          = 60
    ecutrho          = 480
-   nosym            = .true.
    occupations      = 'fixed'
    nspin            = 1
-   input_dft        = 'pbe'
+   input_dft        = 'scan'
    ntyp             = 5
    nat              = 216
    ibrav            = 0
