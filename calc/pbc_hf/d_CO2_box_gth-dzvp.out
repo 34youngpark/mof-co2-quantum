@@ -1,0 +1,5 @@
+WARN: Even tempered Gaussians are generated as DF auxbasis for  O C
+output file: calc/pbc_hf/d_CO2_box_gth-dzvp.log
+d_CO2_box gth-dzvp: 원자 3, 기저함수 39, 전자 16, 스레드 24
+HF = -37.01785946 Ha   converged=True   0.0 min
+HOMO-LUMO gap = 19.56 eV

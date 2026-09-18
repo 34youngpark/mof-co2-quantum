@@ -1,0 +1,5 @@
+WARN: Even tempered Gaussians are generated as DF auxbasis for  N Mg C H O
+output file: calc/pbc_hf/a_MOF_gth-dzvp.log
+a_MOF gth-dzvp: 원자 216, 기저함수 1974, 전자 642, 스레드 24
+HF = -1267.44061472 Ha   converged=True   188.9 min
+HOMO-LUMO gap = 9.49 eV

@@ -1,0 +1,5 @@
+WARN: Even tempered Gaussians are generated as DF auxbasis for  C O N H Mg
+output file: calc/pbc_hf/c_MOF_CO2_free_gth-dzvp.log
+c_MOF_CO2_free gth-dzvp: 원자 219, 기저함수 2013, 전자 658, 스레드 24
+HF = -1304.46173750 Ha   converged=True   209.3 min
+HOMO-LUMO gap = 9.48 eV

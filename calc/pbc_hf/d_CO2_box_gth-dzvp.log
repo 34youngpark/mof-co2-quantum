@@ -1,0 +1,173 @@
+Discarded 0 diffused primitive functions, 0 contracted functions
+#INFO: **** input file is /home/seyoung/mof-co2-quantum/scripts/pbc_hf_mof.py ****
+"""
+주기 HF (Γ점, GDF) — 216/219원자 MOF 계.
+사용: OMP_NUM_THREADS=24 python scripts/pbc_hf_mof.py <name> <basis>
+  name : a_MOF | b_MOF_CO2_bound | c_MOF_CO2_free | d_CO2_box
+  basis: gth-szv | gth-dzvp
+결과: calc/pbc_hf/<name>_<basis>.chk (오비탈 저장, 뒤 단계에서 재사용), 같은 이름 .log
+"""
+import sys, os, time
+from ase.io import read
+from pyscf.pbc import gto, scf
+from pyscf import lib
+
+name, basis = sys.argv[1], sys.argv[2]
+os.makedirs("calc/pbc_hf", exist_ok=True)
+tag = f"calc/pbc_hf/{name}_{basis}"
+
+atoms = read(f"structures/02_relaxed/{name}_relaxed.cif")
+cell = gto.Cell()
+cell.atom = [(s, tuple(p)) for s, p in zip(atoms.get_chemical_symbols(), atoms.positions)]
+cell.a = atoms.cell[:]
+cell.unit = "Angstrom"
+cell.basis = basis
+cell.pseudo = "gth-pbe"
+cell.exp_to_discard = 0.1
+cell.verbose = 4
+cell.output = tag + ".log"
+cell.max_memory = 100000               # MB (워크스테이션 125 GB 중 100 GB)
+cell.build()
+print(f"{name} {basis}: 원자 {cell.natm}, 기저함수 {cell.nao}, 전자 {cell.nelectron}, 스레드 {lib.num_threads()}")
+
+t0 = time.time()
+mf = scf.RHF(cell).density_fit()
+mf.with_df._cderi_to_save = tag + "_cderi.h5"   # 3중심 적분을 디스크에
+mf.chkfile = tag + ".chk"
+mf.conv_tol = 1e-7
+mf.max_cycle = 100
+mf.diis_space = 10
+e_hf = mf.kernel()
+dt = time.time() - t0
+print(f"HF = {e_hf:.8f} Ha   converged={mf.converged}   {dt/60:.1f} min")
+print(f"HOMO-LUMO gap = {(mf.mo_energy[cell.nelectron//2]-mf.mo_energy[cell.nelectron//2-1])*27.2114:.2f} eV")
+with open("calc/pbc_hf/summary.txt", "a") as f:
+    f.write(f"{name}\t{basis}\tnao={cell.nao}\tE={e_hf:.8f}\tconv={mf.converged}\t{dt/60:.1f}min\n")#INFO: ******************** input file end ********************
+
+
+System: uname_result(system='Linux', node='stl-Precision-7920-Tower', release='6.17.0-35-generic', version='#35~24.04.1-Ubuntu SMP PREEMPT_DYNAMIC Tue May 26 19:30:42 UTC 2', machine='x86_64')  Threads 24
+Python 3.11.16 (main, Aug 27 2026, 14:44:21) [GCC 14.3.0]
+numpy 2.4.6  scipy 1.17.1  h5py 3.16.0
+Date: Thu Sep 17 21:28:01 2026
+PySCF version 2.14.0
+PySCF path  /home/seyoung/miniconda3/envs/mof/lib/python3.11/site-packages/pyscf
+
+[CONFIG] conf_file None
+[INPUT] verbose = 4
+[INPUT] num. atoms = 3
+[INPUT] num. electrons = 16
+[INPUT] charge = 0
+[INPUT] spin (= nelec alpha-beta = 2S) = 0
+[INPUT] symmetry False subgroup None
+[INPUT] Mole.unit = Angstrom
+[INPUT] Symbol           X                Y                Z      unit          X                Y                Z       unit  Magmom
+[INPUT]  1 C      7.500000000000   7.500000000000   7.500000000000 AA   14.172945934238  14.172945934238  14.172945934238 Bohr   0.0
+[INPUT]  2 O      8.673090425900   7.500000000000   7.500000000000 AA   16.389765558538  14.172945934238  14.172945934238 Bohr   0.0
+[INPUT]  3 O      6.326909574100   7.500000000000   7.500000000000 AA   11.956126309938  14.172945934238  14.172945934238 Bohr   0.0
+
+nuclear repulsion = 17.0494900845127
+number of shells = 9
+number of NR pGTOs = 63
+number of NR cGTOs = 39
+basis = gth-dzvp
+ecp = {}
+CPU time:         3.20
+lattice vectors  a1 [28.345891863, 0.000000000, 0.000000000]
+                 a2 [0.000000000, 28.345891863, 0.000000000]
+                 a3 [0.000000000, 0.000000000, 28.345891863]
+dimension = 3
+low_dim_ft_type = None
+Cell volume = 22775.6
+exp_to_discard = 0.1
+rcut = 22.07448407082675 (nimgs = [1 1 1])
+precision = 1e-08
+pseudo = gth-pbe
+ke_cutoff = 829.2358823093763
+    = [369 369 369] mesh (50243409 PWs)
+
+
+******** <class 'pyscf.pbc.scf.hf.RHF'> ********
+method = RHF
+initial guess = minao
+damping factor = 0
+level_shift factor = 0
+DIIS = <class 'pyscf.scf.diis.CDIIS'>
+diis_start_cycle = 1
+diis_space = 10
+diis_damp = 0
+SCF conv_tol = 1e-07
+SCF conv_tol_grad = None
+SCF max_cycles = 100
+direct_scf = True
+direct_scf_tol = 1e-13
+chkfile to save SCF result = calc/pbc_hf/d_CO2_box_gth-dzvp.chk
+max_memory 100000 MB (current use 111 MB)
+******** PBC SCF flags ********
+kpt = [0. 0. 0.]
+Exchange divergence treatment (exxdiv) = ewald
+    madelung (= occupied orbital energy shift) = 0.10009554447047207
+    Total energy shift due to Ewald probe charge = -1/2 * Nelec*madelung = -0.800764355764
+DF object = <pyscf.pbc.df.df.GDF object at 0x7fe5af0df510>
+Set gradient conv threshold to 0.000316228
+Initial guess from minao.
+
+
+******** <class 'pyscf.pbc.df.rsdf_builder._RSNucBuilder'> ********
+mesh = [47 47 47] (103823 PWs)
+ke_cutoff = 12.995864097092106
+omega = 0.4553011532653483
+exclude_d_aux = False
+exclude_dd_block = True
+j2c_eig_always = False
+has_long_range = True
+
+
+******** <class 'pyscf.pbc.df.df.GDF'> ********
+auxbasis = None
+exp_to_discard = 0.1
+_cderi_to_save = calc/pbc_hf/d_CO2_box_gth-dzvp_cderi.h5
+len(kpts) = 1
+ETB for O: l = 0, exps = 0.4272777264 * 2^n , n = 0..5
+ETB for O: l = 1, exps = 0.4272777264 * 2^n , n = 0..5
+ETB for O: l = 2, exps = 0.4272777264 * 2^n , n = 0..5
+ETB for O: l = 3, exps = 1.0063042341002049 * 2^n , n = 0..2
+ETB for O: l = 4, exps = 2.37 * 2^n , n = 0..0
+ETB for C: l = 0, exps = 0.2375755314 * 2^n , n = 0..5
+ETB for C: l = 1, exps = 0.2375755314 * 2^n , n = 0..5
+ETB for C: l = 2, exps = 0.2375755314 * 2^n , n = 0..5
+ETB for C: l = 3, exps = 0.51120747699931 * 2^n , n = 0..2
+ETB for C: l = 4, exps = 1.1 * 2^n , n = 0..0
+
+WARN: Even tempered Gaussians are generated as DF auxbasis for  O C
+
+Drop 0 primitive fitting functions
+make aux basis, num shells = 66, num cGTOs = 252
+auxcell.rcut 13.579969116844692
+
+
+******** <class 'pyscf.pbc.df.rsdf_builder._RSGDFBuilder'> ********
+mesh = [41 41 41] (68921 PWs)
+ke_cutoff = 9.826740338065866
+omega = 0.3798978598044233
+exclude_d_aux = True
+exclude_dd_block = True
+j2c_eig_always = False
+has_long_range = True
+init E= -36.868589418378
+  HOMO = -0.491625743885377  LUMO = 0.098515650788844  gap/eV = 16.05857
+cycle= 1 E= -36.9297138733114  delta_E= -0.0611  |g|= 0.656  |ddm|=  3.2
+  HOMO = -0.526849569278338  LUMO = 0.150452996387939  gap/eV = 18.43034
+cycle= 2 E= -36.9818216317387  delta_E= -0.0521  |g|= 0.434  |ddm|= 1.28
+  HOMO = -0.551918314795653  LUMO = 0.174516032804023  gap/eV = 19.76729
+cycle= 3 E= -37.0173899018779  delta_E= -0.0356  |g|= 0.0408  |ddm|= 0.512
+  HOMO = -0.538429776048268  LUMO = 0.179980740850165  gap/eV = 19.54895
+cycle= 4 E= -37.0178237571049  delta_E= -0.000434  |g|= 0.00874  |ddm|= 0.063
+  HOMO = -0.540996228612885  LUMO = 0.17809679890131  gap/eV = 19.56752
+cycle= 5 E= -37.0178574424405  delta_E= -3.37e-05  |g|= 0.0019  |ddm|= 0.0185
+  HOMO = -0.540818646838097  LUMO = 0.178062234828802  gap/eV = 19.56175
+cycle= 6 E= -37.0178594155148  delta_E= -1.97e-06  |g|= 0.000379  |ddm|= 0.00536
+  HOMO = -0.540832008645084  LUMO = 0.17807603512182  gap/eV = 19.56248
+cycle= 7 E= -37.0178594610335  delta_E= -4.55e-08  |g|= 6.28e-05  |ddm|= 0.000852
+  HOMO = -0.540823125018975  LUMO = 0.178079992279548  gap/eV = 19.56235
+Extra cycle  E= -37.0178594621568  delta_E= -1.12e-09  |g|= 2.15e-05  |ddm|= 0.000157
+converged SCF energy = -37.0178594621568
