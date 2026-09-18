@@ -1,13 +1,16 @@
 """
 FCIDUMP → Jordan-Wigner 큐비트 해밀토니안 (CUDA-Q SpinOperator).
-큐비트 순서는 interleaved: qubit 2p = 오비탈 p의 α, qubit 2p+1 = 오비탈 p의 β.
-(Rocca의 QNP 회로가 4큐비트 = 인접한 공간 오비탈 2개 단위로 작동하므로 이 순서가 필요)
+
+큐비트 라벨은 interleaved: qubit 2p = 오비탈 p의 α, qubit 2p+1 = 오비탈 p의 β.
+단, Jordan-Wigner 변환 자체는 Rocca(qiskit-nature)와 같이 블록 순서(α0..α(n-1), β0..β(n-1))로
+수행한 뒤 큐비트 번호만 interleaved로 바꾼다. 그래서 Z-string이 같은 스핀 큐비트에만 걸린다.
+페르미온 모드 순서가 다르면 같은 회로가 다른 에너지를 주므로, Rocca의 최적 파라미터를
+재현하려면 이 관례를 반드시 지켜야 한다. (2026-09-18 검증: 이 관례로 CO2 FCI 재현)
 """
 import numpy as np
 from pyscf import ao2mo
 from pyscf.tools import fcidump
 from openfermion import InteractionOperator, jordan_wigner
-from openfermion.chem.molecular_data import spinorb_from_spatial
 import cudaq
 
 
@@ -20,10 +23,17 @@ def read_fcidump(path):
 
 
 def fermion_operator(path):
-    """FCIDUMP → openfermion InteractionOperator (spin-orbital, interleaved α/β)"""
+    """FCIDUMP → openfermion InteractionOperator. 스핀오비탈 인덱스는 블록 순서:
+    s = p (α), s = norb + p (β)."""
     h1, eri, ecore, norb, nelec = read_fcidump(path)
-    two = np.asarray(eri.transpose(0, 2, 3, 1), order="C")   # openfermion 규약
-    h1s, h2s = spinorb_from_spatial(h1, two)
+    n = norb
+    h1s = np.zeros((2 * n, 2 * n))
+    h1s[:n, :n] = h1
+    h1s[n:, n:] = h1
+    # H = Σ h_pq a†p aq + ½ Σ (pq|rs) a†pσ a†rτ asτ aqσ  (chemist)
+    h2s = np.zeros((2 * n,) * 4)
+    for so, to in [(0, 0), (0, n), (n, 0), (n, n)]:
+        h2s[so:so + n, to:to + n, to:to + n, so:so + n] += eri.transpose(0, 2, 3, 1)
     return InteractionOperator(ecore, h1s, 0.5 * h2s)
 
 
@@ -32,11 +42,12 @@ def qubit_hamiltonian(path):
     h1, eri, ecore, norb, nelec = read_fcidump(path)
     qop = jordan_wigner(fermion_operator(path))
     nq = 2 * norb
+    relabel = lambda s: 2 * s if s < norb else 2 * (s - norb) + 1   # 블록 → interleaved
     H = cudaq.SpinOperator.empty()
     for term, coef in qop.terms.items():
         w = ["I"] * nq
         for idx, p in term:
-            w[idx] = p
+            w[relabel(idx)] = p
         H += coef.real * cudaq.SpinOperator.from_word("".join(w))
     return H, 2 * norb, nelec, ecore
 
