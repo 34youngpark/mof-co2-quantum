@@ -8,7 +8,7 @@ sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
 from quantum.qnp.hamiltonian import qubit_hamiltonian
 from quantum.qnp.ansatz import qnp_ansatz, load_rocca_params, n_gates
 
-cudaq.set_target("nvidia" if "--gpu" in sys.argv else "qpp-cpu")
+cudaq.set_target("nvidia", option="fp64") if "--gpu" in sys.argv else cudaq.set_target("qpp-cpu")
 KJ = 2625.5
 ROCCA = os.path.expanduser("~/external/quantum_simulation_MOF/qnp_vqe_qiskit_simulator")
 CASES = {"CO2": (4, "CO2", -25.76203867), "MOF": (10, "MOF", -55.27452186), "MOFCO2": (18, "MOFCO2", None)}

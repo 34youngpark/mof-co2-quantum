@@ -14,3 +14,8 @@ __pycache__/
 .ipynb_checkpoints/
 *.h5
 *.chk
+*_cderi.h5
+*.cube
+scratch/*_cderi.h5
+*.cube
+scratch/
