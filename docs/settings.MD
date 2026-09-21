@@ -97,3 +97,8 @@ SSSP Efficiency v1.3 (PBE)
 - `nohup`만으로는 mpirun이 터미널 종료 시 죽음 → `setsid nohup … < /dev/null &` 사용
 - single-point에서 (a),(c)가 `sym_rho_init_shell: lone vector`로 실패 → 대칭 사용 끔 (`nosym=.true.`)
 - (b) relax가 BFGS 소보폭으로 92스텝 소요; 에너지 단조 감소, 이웃 다이아민(H32, H38, C138, C144)이 0.3~0.5 Å 재배치
+
+
+## 5.1단계 범함수 벤치마크에 대한 메모
+SCAN: 제외. conda-forge QE 빌드가 libxc 미포함 (pw.x 에러 "libxc needed for this functional", ldd 확인). 
+벤치마크는 PBE, PBE-D3, vdW-DF, vdW-DF2 4종으로 확정.
