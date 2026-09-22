@@ -24,7 +24,7 @@ cell.pseudo = "gth-pbe"
 cell.exp_to_discard = 0.1
 cell.verbose = 4
 cell.output = tag + ".log"
-cell.max_memory = 100000               # MB (워크스테이션 125 GB 중 100 GB)
+cell.max_memory = int(os.environ.get("PYSCF_MAX_MEMORY", 100000))
 cell.build()
 print(f"{name} {basis}: 원자 {cell.natm}, 기저함수 {cell.nao}, 전자 {cell.nelectron}, 스레드 {lib.num_threads()}")
 

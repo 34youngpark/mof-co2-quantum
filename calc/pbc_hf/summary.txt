@@ -3,3 +3,5 @@ d_CO2_box	gth-dzvp	nao=39	E=-37.01785946	conv=True	0.0min
 a_MOF	gth-dzvp	nao=1974	E=-1267.44061472	conv=True	188.9min
 b_MOF_CO2_bound	gth-dzvp	nao=2013	E=-1304.46679649	conv=True	199.3min
 c_MOF_CO2_free	gth-dzvp	nao=2013	E=-1304.46173750	conv=True	209.3min
+b_MOF_CO2_bound	gth-szv	nao=576	E=-1292.62795219	conv=True	18.9min
+c_MOF_CO2_free	gth-szv	nao=576	E=-1292.54797256	conv=True	21.0min
