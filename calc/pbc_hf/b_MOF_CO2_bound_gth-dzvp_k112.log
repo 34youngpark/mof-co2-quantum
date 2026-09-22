@@ -337,3 +337,49 @@ exclude_d_aux = False
 exclude_dd_block = True
 j2c_eig_always = False
 has_long_range = True
+
+
+******** <class 'pyscf.pbc.df.df.GDF'> ********
+auxbasis = None
+exp_to_discard = 0.1
+_cderi_to_save = /home/seyoung/mof-co2-quantum/scratch/tmpu1apoiyw
+len(kpts) = 2
+ETB for H: l = 0, exps = 0.3316473864 * 2^n , n = 0..5
+ETB for H: l = 1, exps = 0.6944172375636999 * 2^n , n = 0..3
+ETB for H: l = 2, exps = 1.454 * 2^n , n = 0..0
+ETB for Mg: l = 0, exps = 1.138126092 * 2^n , n = 0..5
+ETB for Mg: l = 1, exps = 1.138126092 * 2^n , n = 0..5
+ETB for Mg: l = 2, exps = 0.6524255960705404 * 2^n , n = 0..6
+ETB for Mg: l = 3, exps = 0.6524255960705404 * 2^n , n = 0..3
+ETB for Mg: l = 4, exps = 0.374 * 2^n , n = 0..0
+ETB for O: l = 0, exps = 0.4272777264 * 2^n , n = 0..5
+ETB for O: l = 1, exps = 0.4272777264 * 2^n , n = 0..5
+ETB for O: l = 2, exps = 0.4272777264 * 2^n , n = 0..5
+ETB for O: l = 3, exps = 1.0063042341002049 * 2^n , n = 0..2
+ETB for O: l = 4, exps = 2.37 * 2^n , n = 0..0
+ETB for C: l = 0, exps = 0.2375755314 * 2^n , n = 0..5
+ETB for C: l = 1, exps = 0.2375755314 * 2^n , n = 0..5
+ETB for C: l = 2, exps = 0.2375755314 * 2^n , n = 0..5
+ETB for C: l = 3, exps = 0.51120747699931 * 2^n , n = 0..2
+ETB for C: l = 4, exps = 1.1 * 2^n , n = 0..0
+ETB for N: l = 0, exps = 0.3256445704 * 2^n , n = 0..5
+ETB for N: l = 1, exps = 0.3256445704 * 2^n , n = 0..5
+ETB for N: l = 2, exps = 0.3256445704 * 2^n , n = 0..5
+ETB for N: l = 3, exps = 0.7294540616334931 * 2^n , n = 0..2
+ETB for N: l = 4, exps = 1.634 * 2^n , n = 0..0
+
+WARN: Even tempered Gaussians are generated as DF auxbasis for  H O Mg C N
+
+Drop 0 primitive fitting functions
+make aux basis, num shells = 3708, num cGTOs = 12246
+auxcell.rcut 13.579969116844692
+
+
+******** <class 'pyscf.pbc.df.rsdf_builder._RSGDFBuilder'> ********
+mesh = [29 29 11] (9251 PWs)
+ke_cutoff = 2.24788357186465
+omega = 0.19012201571877496
+exclude_d_aux = True
+exclude_dd_block = True
+j2c_eig_always = False
+has_long_range = True
