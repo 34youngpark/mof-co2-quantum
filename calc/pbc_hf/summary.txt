@@ -5,3 +5,5 @@ b_MOF_CO2_bound	gth-dzvp	nao=2013	E=-1304.46679649	conv=True	199.3min
 c_MOF_CO2_free	gth-dzvp	nao=2013	E=-1304.46173750	conv=True	209.3min
 b_MOF_CO2_bound	gth-szv	nao=576	E=-1292.62795219	conv=True	18.9min
 c_MOF_CO2_free	gth-szv	nao=576	E=-1292.54797256	conv=True	21.0min
+b_MOF_CO2_bound	gth-szv_k112	nao=576	E=-1292.51249405	conv=True	121.7min
+c_MOF_CO2_free	gth-szv_k112	nao=576	E=-1292.42559602	conv=True	121.9min

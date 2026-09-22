@@ -45,7 +45,11 @@ else:
     assert n_layers and fcidump, "우리 계는 --fcidump, --layers 필수"
 if a.layers: n_layers = a.layers
 
-H, nq, ne, ecore = qubit_hamiltonian(fcidump)
+if a.fast:
+    from pyscf.tools import fcidump as _fd
+    _d = _fd.read(fcidump, verbose=False); nq, ne, ecore, H = 2*_d["NORB"], _d["NELEC"], _d["ECORE"], None
+else:
+    H, nq, ne, ecore = qubit_hamiltonian(fcidump)
 if fci is not None and fci_is_total: fci -= ecore          # 내부 관례: ECORE 제외 전자 에너지
 ng = n_gates(nq, n_layers); npar = 2 * ng
 out = f"vqe_{a.name}{a.tag}.npz"
