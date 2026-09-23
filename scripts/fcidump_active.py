@@ -19,6 +19,7 @@ ap.add_argument('--cderi', required=True); ap.add_argument('--name', required=Tr
 ap.add_argument('--spaces', nargs='+', default=['7,7', '5,5'], help='nocc,nvir 목록')
 ap.add_argument('--nvir-pool', type=int, default=80)
 ap.add_argument('--max-mem', type=int, default=20000)
+ap.add_argument('--no-casci', action='store_true', help='큰 공간: CASCI 생략 (CCSD(T)용 FCIDUMP만)')
 a = ap.parse_args(); t0 = time.time(); KJ = 2625.5
 spaces = [tuple(int(v) for v in s.split(',')) for s in a.spaces]
 
@@ -87,8 +88,11 @@ for nocc_sel, nvir_sel in spaces:
     e_cas_hf = (np.einsum('ij,ij', h1, dmc) + 0.5*np.einsum('ijkl,ij,kl', eri_cas, dmc, dmc)
                 - 0.25*np.einsum('ijkl,il,kj', eri_cas, dmc, dmc))
     ecore = e_hf_noexx - e_cas_hf
-    cis = fci.direct_spin1.FCI(); cis.max_cycle = 200; cis.conv_tol = 1e-9
-    e_casci, ci = cis.kernel(h1, eri_cas, ncas, nelecas, ecore=ecore)
+    if a.no_casci:
+        e_casci = float('nan')
+    else:
+        cis = fci.direct_spin1.FCI(); cis.max_cycle = 200; cis.conv_tol = 1e-9
+        e_casci, ci = cis.kernel(h1, eri_cas, ncas, nelecas, ecore=ecore)
     path = f"quantum/reference/FCIDUMP.{a.name}.{nq}q"
     fcidump.from_integrals(path, h1, eri_cas, ncas, nelecas, nuc=ecore, ms=0)
     np.savez(f"as_final_{a.name}_{nq}q.npz", C_cas=C_cas, ncas=ncas, nelecas=nelecas,

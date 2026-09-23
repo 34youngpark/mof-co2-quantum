@@ -32,6 +32,7 @@ ap.add_argument("--eval-only", action="store_true", help="초기값 에너지만
 ap.add_argument("--maxiter", type=int, default=200); ap.add_argument("--bh", type=int, default=0)
 ap.add_argument("--step", type=float, default=0.3); ap.add_argument("--resume", action="store_true")
 ap.add_argument("--seed", type=int, default=0); ap.add_argument("--tag", default="")
+ap.add_argument("--eps", type=float, default=None, help="L-BFGS-B 유한차분 간격 (fp32면 1e-4 권장)")
 ap.add_argument("--occ", help="재배열 FCIDUMP의 점유 공간오비탈 인덱스, 콤마구분")
 a = ap.parse_args()
 
@@ -99,7 +100,7 @@ def cb(x, *_):
     if fci is not None: msg += f"  ΔFCI={(e-fci)*KJ:8.3f} kJ/mol"
     print(msg, flush=True)
 
-opts = dict(method="L-BFGS-B", options={"maxiter": a.maxiter, "ftol": 1e-12, "gtol": 1e-6})
+opts = dict(method="L-BFGS-B", options={"maxiter": a.maxiter, "ftol": 1e-12, "gtol": 1e-6, "eps": a.eps if a.eps else (1e-4 if a.fp32 else 1e-8)})
 if a.bh == 0:
     minimize(f, x0, callback=cb, **opts)
 else:
