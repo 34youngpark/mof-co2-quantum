@@ -48,7 +48,7 @@ with open("calc/pbc_hf/summary.txt", "a") as f:
 System: uname_result(system='Linux', node='stl-Precision-7920-Tower', release='7.0.0-31-generic', version='#31~24.04.1-Ubuntu SMP PREEMPT_DYNAMIC Mon Aug 10 09:38:02 UTC 2', machine='x86_64')  Threads 16
 Python 3.11.16 (main, Aug 27 2026, 14:44:21) [GCC 14.3.0]
 numpy 2.4.6  scipy 1.17.1  h5py 3.16.0
-Date: Wed Sep 23 09:27:10 2026
+Date: Wed Sep 23 13:07:36 2026
 PySCF version 2.14.0
 PySCF path  /home/seyoung/miniconda3/envs/mof/lib/python3.11/site-packages/pyscf
 
@@ -288,7 +288,7 @@ number of NR pGTOs = 2304
 number of NR cGTOs = 576
 basis = gth-szv
 ecp = {}
-CPU time:         3.10
+CPU time:         3.25
 lattice vectors  a1 [41.486423799, 0.000000000, 0.000000000]
                  a2 [-20.743211899, 35.928280170, 0.000000000]
                  a3 [0.000000000, 0.000000000, 13.245577958]
@@ -318,7 +318,7 @@ SCF max_cycles = 100
 direct_scf = True
 direct_scf_tol = 1e-13
 chkfile to save SCF result = calc/pbc_hf/b_MOF_CO2_bound_gth-szv_k113.chk
-max_memory 50000 MB (current use 108 MB)
+max_memory 50000 MB (current use 107 MB)
 
 
 ******** PBC SCF flags ********
@@ -326,7 +326,7 @@ N kpts = 3
 Exchange divergence treatment (exxdiv) = ewald
     madelung (= occupied orbital energy shift) = 0.07336499001414051
     Total energy shift due to Ewald probe charge = -1/2 * Nelec*madelung = -24.1370817147
-DF object = <pyscf.pbc.df.df.GDF object at 0x79e4883dc710>
+DF object = <pyscf.pbc.df.df.GDF object at 0x744eb8cfb550>
 Set gradient conv threshold to 0.000316228
 
 
@@ -343,23 +343,23 @@ has_long_range = True
 ******** <class 'pyscf.pbc.df.df.GDF'> ********
 auxbasis = None
 exp_to_discard = 0.1
-_cderi_to_save = /home/seyoung/mof-co2-quantum/scratch/tmpj6ceepzs
+_cderi_to_save = /home/seyoung/mof-co2-quantum/scratch/tmpv_en92l4
 len(kpts) = 3
-ETB for N: l = 0, exps = 0.3256445704 * 2^n , n = 0..5
-ETB for N: l = 1, exps = 0.3256445704 * 2^n , n = 0..5
-ETB for N: l = 2, exps = 0.3256445704 * 2^n , n = 0..5
-ETB for Mg: l = 0, exps = 1.138126092 * 2^n , n = 0..5
-ETB for Mg: l = 1, exps = 1.138126092 * 2^n , n = 0..5
-ETB for Mg: l = 2, exps = 1.138126092 * 2^n , n = 0..5
-ETB for C: l = 0, exps = 0.2375755314 * 2^n , n = 0..5
-ETB for C: l = 1, exps = 0.2375755314 * 2^n , n = 0..5
-ETB for C: l = 2, exps = 0.2375755314 * 2^n , n = 0..5
-ETB for H: l = 0, exps = 0.3316473864 * 2^n , n = 0..5
 ETB for O: l = 0, exps = 0.4272777264 * 2^n , n = 0..5
 ETB for O: l = 1, exps = 0.4272777264 * 2^n , n = 0..5
 ETB for O: l = 2, exps = 0.4272777264 * 2^n , n = 0..5
+ETB for Mg: l = 0, exps = 1.138126092 * 2^n , n = 0..5
+ETB for Mg: l = 1, exps = 1.138126092 * 2^n , n = 0..5
+ETB for Mg: l = 2, exps = 1.138126092 * 2^n , n = 0..5
+ETB for H: l = 0, exps = 0.3316473864 * 2^n , n = 0..5
+ETB for C: l = 0, exps = 0.2375755314 * 2^n , n = 0..5
+ETB for C: l = 1, exps = 0.2375755314 * 2^n , n = 0..5
+ETB for C: l = 2, exps = 0.2375755314 * 2^n , n = 0..5
+ETB for N: l = 0, exps = 0.3256445704 * 2^n , n = 0..5
+ETB for N: l = 1, exps = 0.3256445704 * 2^n , n = 0..5
+ETB for N: l = 2, exps = 0.3256445704 * 2^n , n = 0..5
 
-WARN: Even tempered Gaussians are generated as DF auxbasis for  H N O C Mg
+WARN: Even tempered Gaussians are generated as DF auxbasis for  N Mg H C O
 
 Drop 0 primitive fitting functions
 make aux basis, num shells = 2718, num cGTOs = 6930
@@ -374,3 +374,29 @@ exclude_d_aux = True
 exclude_dd_block = True
 j2c_eig_always = False
 has_long_range = True
+init E= -1311.07457159808
+  HOMO = -0.0275925174941  LUMO = 0.0703278215784  gap/eV = 2.66455
+cycle= 1 E= -1289.0030427283  delta_E= 22.1  |g|= 5.51  |ddm|=  316
+  HOMO = 0.148673378447  LUMO = 0.178255130805  gap/eV = 0.80496
+cycle= 2 E= -1289.96822493647  delta_E= -0.965  |g|=    5  |ddm|= 15.2
+  HOMO = -0.0936914828908  LUMO = 0.217878845664  gap/eV = 8.47826
+cycle= 3 E= -1292.3809031789  delta_E= -2.41  |g|= 0.86  |ddm|= 8.31
+  HOMO = -0.107081946369  LUMO = 0.237032053111  gap/eV = 9.36382
+cycle= 4 E= -1292.46934516584  delta_E= -0.0884  |g|= 0.286  |ddm|= 1.74
+  HOMO = -0.111271997525  LUMO = 0.236152764685  gap/eV = 9.45391
+cycle= 5 E= -1292.48151399346  delta_E= -0.0122  |g|= 0.0909  |ddm|= 0.629
+  HOMO = -0.112049988842  LUMO = 0.239382235236  gap/eV = 9.56296
+cycle= 6 E= -1292.48321475231  delta_E= -0.0017  |g|= 0.0345  |ddm|= 0.225
+  HOMO = -0.112274282835  LUMO = 0.238780140465  gap/eV = 9.55268
+cycle= 7 E= -1292.4835350452  delta_E= -0.00032  |g|= 0.0119  |ddm|= 0.113
+  HOMO = -0.112753049562  LUMO = 0.239052232986  gap/eV = 9.57311
+cycle= 8 E= -1292.48357404194  delta_E= -3.9e-05  |g|= 0.00445  |ddm|= 0.0428
+  HOMO = -0.112737293738  LUMO = 0.239007522003  gap/eV = 9.57146
+cycle= 9 E= -1292.48357765732  delta_E= -3.62e-06  |g|= 0.00138  |ddm|= 0.0118
+  HOMO = -0.112764402335  LUMO = 0.239039174633  gap/eV = 9.57306
+cycle= 10 E= -1292.48357815246  delta_E= -4.95e-07  |g|= 0.000543  |ddm|= 0.00482
+  HOMO = -0.112758170058  LUMO = 0.239028681104  gap/eV = 9.57261
+cycle= 11 E= -1292.48357822405  delta_E= -7.16e-08  |g|= 0.000204  |ddm|= 0.00171
+  HOMO = -0.112756116512  LUMO = 0.239032279277  gap/eV = 9.57265
+Extra cycle  E= -1292.48357823347  delta_E= -9.42e-09  |g|= 0.000107  |ddm|= 0.00054
+converged SCF energy = -1292.48357823347

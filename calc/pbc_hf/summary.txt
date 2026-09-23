@@ -7,3 +7,4 @@ b_MOF_CO2_bound	gth-szv	nao=576	E=-1292.62795219	conv=True	18.9min
 c_MOF_CO2_free	gth-szv	nao=576	E=-1292.54797256	conv=True	21.0min
 b_MOF_CO2_bound	gth-szv_k112	nao=576	E=-1292.51249405	conv=True	121.7min
 c_MOF_CO2_free	gth-szv_k112	nao=576	E=-1292.42559602	conv=True	121.9min
+b_MOF_CO2_bound	gth-szv_k113	nao=576	E=-1292.48357823	conv=True	251.2min

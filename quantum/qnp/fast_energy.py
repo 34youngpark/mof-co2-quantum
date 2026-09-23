@@ -7,11 +7,12 @@ import time, gc, numpy as np, cudaq
 from pyscf import ao2mo
 from pyscf.fci import cistring, direct_spin1
 from pyscf.tools import fcidump
-from .ansatz import qnp_ansatz
+from .ansatz import qnp_ansatz, qnp_ansatz_occ
 
 
 class FastEnergy:
-    def __init__(self, fcidump_path, n_layers, verbose=True):
+    def __init__(self, fcidump_path, n_layers, verbose=True, occ=None):
+        self.occ = occ
         d = fcidump.read(fcidump_path, verbose=False)
         self.norb, nelec = d["NORB"], d["NELEC"]
         self.nq, self.ne, self.nl = 2 * self.norb, nelec, n_layers
@@ -52,7 +53,10 @@ class FastEnergy:
         return n_gates(self.nq, self.nl)
 
     def _state(self, theta, phi):
-        st = cudaq.get_state(qnp_ansatz, self.nq, self.ne, self.nl, [float(x) for x in theta], [float(x) for x in phi])
+        if self.occ is None:
+            st = cudaq.get_state(qnp_ansatz, self.nq, self.ne, self.nl, [float(x) for x in theta], [float(x) for x in phi])
+        else:
+            st = cudaq.get_state(qnp_ansatz_occ, self.nq, list(self.occ), self.nl, [float(x) for x in theta], [float(x) for x in phi])
         arr = np.array(st)
         del st; gc.collect()                      # GPU 상태벡터 즉시 해제 (28q: 4.3 GB)
         return arr

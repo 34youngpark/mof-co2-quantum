@@ -32,6 +32,7 @@ ap.add_argument("--eval-only", action="store_true", help="초기값 에너지만
 ap.add_argument("--maxiter", type=int, default=200); ap.add_argument("--bh", type=int, default=0)
 ap.add_argument("--step", type=float, default=0.3); ap.add_argument("--resume", action="store_true")
 ap.add_argument("--seed", type=int, default=0); ap.add_argument("--tag", default="")
+ap.add_argument("--occ", help="재배열 FCIDUMP의 점유 공간오비탈 인덱스, 콤마구분")
 a = ap.parse_args()
 
 if a.fp32: cudaq.set_target("nvidia")
@@ -57,7 +58,7 @@ print(f"[{a.name}] {nq}q ne={ne} layers={n_layers} gates={ng} params={npar}  FCI
 
 if a.fast:
     from quantum.qnp.fast_energy import FastEnergy
-    fe = FastEnergy(fcidump, n_layers)
+    fe = FastEnergy(fcidump, n_layers, occ=[int(v) for v in a.occ.split(',')] if a.occ else None)
     def energy(x): return fe.energy(x[:ng], x[ng:])
 else:
     def energy(x):

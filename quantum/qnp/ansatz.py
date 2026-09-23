@@ -105,3 +105,48 @@ def load_rocca_params(path, nq, n_layers):
         phi += list(vals[k:k + ng]); k += ng
     assert k == len(vals), (k, len(vals))
     return theta, phi
+
+
+@cudaq.kernel
+def qnp_ansatz_occ(nq: int, occ: list[int], n_layers: int, theta: list[float], phi: list[float]):
+    """qnp_ansatz와 동일하되 HF 점유를 공간 오비탈 인덱스 목록 occ로 지정 (재배열 FCIDUMP용)."""
+    q = cudaq.qvector(nq)
+    for p in occ:
+        x(q[2 * p]); x(q[2 * p + 1])
+    ig = 0
+    for nl in range(2 * n_layers):
+        if nl % 2 == 0:
+            ngate = nq // 4; start = 0
+        else:
+            ngate = (nq - 1) // 4
+            if nq % 2 != 0: start = nq % 4
+            else: start = 2
+        for g in range(ngate):
+            s0 = start + 4 * g
+            qnp_px(theta[ig], q[s0], q[s0 + 1], q[s0 + 2], q[s0 + 3])
+            qnp_or(phi[ig], q[s0], q[s0 + 1], q[s0 + 2], q[s0 + 3])
+            ig += 1
+
+@cudaq.kernel
+def qnp_ansatz_occ(nq: int, occ: list[int], n_layers: int, theta: list[float], phi: list[float]):
+    """qnp_ansatz와 동일하되 HF 점유를 공간 오비탈 인덱스 목록 occ로 지정 (재배열 FCIDUMP용)."""
+    q = cudaq.qvector(nq)
+    for p in occ:
+        x(q[2 * p])
+        x(q[2 * p + 1])
+    ig = 0
+    for nl in range(2 * n_layers):
+        if nl % 2 == 0:
+            ngate = nq // 4
+            start = 0
+        else:
+            ngate = (nq - 1) // 4
+            if nq % 2 != 0:
+                start = nq % 4
+            else:
+                start = 2
+        for g in range(ngate):
+            s0 = start + 4 * g
+            qnp_px(theta[ig], q[s0], q[s0 + 1], q[s0 + 2], q[s0 + 3])
+            qnp_or(phi[ig], q[s0], q[s0 + 1], q[s0 + 2], q[s0 + 3])
+            ig += 1
