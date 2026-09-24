@@ -19,3 +19,6 @@ __pycache__/
 scratch/*_cderi.h5
 *.cube
 scratch/
+quantum/reference/FCIDUMP.*.192q
+quantum/reference/FCIDUMP.*.176q
+quantum/reference/FCIDUMP.*.78q

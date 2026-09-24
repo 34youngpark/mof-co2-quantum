@@ -19,6 +19,7 @@ ap.add_argument("name"); ap.add_argument("--fcidump"); ap.add_argument("--fci", 
 ap.add_argument("--gpu", action="store_true"); ap.add_argument("--max-ops", type=int, default=30)
 ap.add_argument("--grad-tol", type=float, default=1e-3); ap.add_argument("--maxiter", type=int, default=100)
 ap.add_argument("--tag", default="")
+ap.add_argument("--resume", action="store_true")
 a = ap.parse_args()
 cudaq.set_target("nvidia", option="fp64") if a.gpu else cudaq.set_target("qpp-cpu")
 if a.name in CASES: fcidump, fci, is_total = f"quantum/reference/reduced_FCIDUMP.{a.name}", CASES[a.name], False
@@ -47,6 +48,8 @@ def adapt_kernel(nq: int, ne: int, theta: list[float], idx: list[int], coefs: li
         exp_pauli(theta[idx[k]] * coefs[k], q, words[k])
 
 sel = []            # 선택된 풀 인덱스
+_ck = f"adapt_{a.name}{a.tag}.npz"
+_resume = a.resume and os.path.exists(_ck)
 def flat(sel):
     idx, coefs, words = [], [], []
     for j, k in enumerate(sel):
@@ -58,10 +61,15 @@ def energy(theta, sel):
     idx, coefs, words = flat(sel); nfev[0] += 1
     return cudaq.observe(adapt_kernel, H, nq, ne, [float(v) for v in theta], idx, coefs, words).expectation() - ecore
 
-theta = np.zeros(0); e = energy(theta, sel); t0 = time.time(); hist = []
+if _resume:
+    _z = np.load(_ck); sel = [int(k) for k in _z["sel"]]; theta = np.array(_z["theta"]); hist = [tuple(h) for h in _z["hist"]]
+    e = energy(theta, sel); print(f"[resume] {_ck}: nops={len(sel)}", flush=True)
+else:
+    theta = np.zeros(0); hist = []; e = energy(theta, sel)
+t0 = time.time()
 print(f"[init] E={e:.8f}" + (f"  ΔFCI={(e-fci)*KJ:.3f} kJ/mol" if fci is not None else ""), flush=True)
 eps = 1e-3
-for step in range(a.max_ops):
+for step in range(len(sel), a.max_ops):
     # 기울기: 후보 op를 끝에 붙이고 ±eps 유한차분
     g = np.zeros(len(pool))
     for k in range(len(pool)):
