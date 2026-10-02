@@ -1,10 +1,11 @@
 """
-CIF(또는 이전 계산의 .pwo) → calc/relax_vdwdf2/<name>/espresso.pwi
+CIF (or a .pwo from a previous run) → calc/relax_vdwdf2/<name>/espresso.pwi
 
-사용 (레포 루트에서):
+Usage (from the repo root):
   python scripts/make_qe_input.py a_MOF
   python scripts/make_qe_input.py b_MOF_CO2_bound calc/relax_vdwdf2/b_MOF_CO2_bound/espresso_run1.pwo
-두 번째 인자를 주면 그 파일(.pwo면 마지막 프레임)의 좌표에서 이어서 시작한다.
+If a second argument is given, start from the coordinates in that file
+(the last frame, if it is a .pwo).
 """
 import sys, os
 from ase.io import read, write
@@ -39,4 +40,4 @@ input_data = {
 
 write(f"{outdir}/espresso.pwi", atoms, format="espresso-in",
       input_data=input_data, pseudopotentials=pseudos, kpts=kpts)
-print(f"생성: {outdir}/espresso.pwi  (원자 {len(atoms)}개, k-mesh {kpts}, 출처 {src})")
+print(f"Written: {outdir}/espresso.pwi  ({len(atoms)} atoms, k-mesh {kpts}, source {src})")
