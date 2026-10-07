@@ -1,0 +1,168 @@
+nohup: ignoring input
+=== L20 from HF
+[b] 20q ne=10 layers=20 gates=180 params=360  FCI(elec)=-17.083470653130007  ecore=-1269.216926
+[FastEnergy] 20q ne=10 dets=252x252=63,504 / 1,048,576  endian=little
+[init] E=-17.00425979  (total -1286.22118618)  ΔFCI=207.968 kJ/mol  (0.33s/eval → 1 gradient ≈ 2.0 min)
+  iter    1  nfev=  1083  E_best=-17.02256153     6.8 min  ΔFCI= 159.917 kJ/mol
+  iter    2  nfev=  1444  E_best=-17.02431349     9.1 min  ΔFCI= 155.317 kJ/mol
+  iter    3  nfev=  1805  E_best=-17.02440433    11.3 min  ΔFCI= 155.079 kJ/mol
+  iter    4  nfev=  2166  E_best=-17.02445456    13.5 min  ΔFCI= 154.947 kJ/mol
+  iter    5  nfev=  2527  E_best=-17.02445672    15.6 min  ΔFCI= 154.941 kJ/mol
+  iter    6  nfev=  2888  E_best=-17.02445747    17.8 min  ΔFCI= 154.939 kJ/mol
+  iter    7  nfev=  3249  E_best=-17.02445747    20.1 min  ΔFCI= 154.939 kJ/mol
+  iter    8  nfev=  3610  E_best=-17.02445747    22.4 min  ΔFCI= 154.939 kJ/mol
+  iter    9  nfev=  3971  E_best=-17.02445749    24.6 min  ΔFCI= 154.939 kJ/mol
+  iter   10  nfev=  4332  E_best=-17.02445752    26.8 min  ΔFCI= 154.939 kJ/mol
+  iter   11  nfev=  4693  E_best=-17.02445759    29.0 min  ΔFCI= 154.939 kJ/mol
+  iter   12  nfev=  5054  E_best=-17.02445774    31.2 min  ΔFCI= 154.938 kJ/mol
+  iter   13  nfev=  5415  E_best=-17.02445811    33.4 min  ΔFCI= 154.937 kJ/mol
+  iter   14  nfev=  5776  E_best=-17.02445891    35.6 min  ΔFCI= 154.935 kJ/mol
+  iter   15  nfev=  6137  E_best=-17.02446042    37.9 min  ΔFCI= 154.931 kJ/mol
+  iter   16  nfev=  6498  E_best=-17.02446235    40.1 min  ΔFCI= 154.926 kJ/mol
+  iter   17  nfev=  7220  E_best=-17.02446240    44.7 min  ΔFCI= 154.926 kJ/mol
+  iter   18  nfev=  7581  E_best=-17.02446353    46.9 min  ΔFCI= 154.923 kJ/mol
+  iter   19  nfev=  7942  E_best=-17.02446383    49.1 min  ΔFCI= 154.922 kJ/mol
+  iter   20  nfev=  8303  E_best=-17.02446384    51.3 min  ΔFCI= 154.922 kJ/mol
+  iter   21  nfev=  8664  E_best=-17.02446384    53.5 min  ΔFCI= 154.922 kJ/mol
+  iter   22  nfev=  9025  E_best=-17.02446385    55.7 min  ΔFCI= 154.922 kJ/mol
+  iter   23  nfev=  9386  E_best=-17.02446388    57.9 min  ΔFCI= 154.922 kJ/mol
+  iter   24  nfev=  9747  E_best=-17.02446390    60.1 min  ΔFCI= 154.922 kJ/mol
+  iter   25  nfev= 10108  E_best=-17.02446401    62.3 min  ΔFCI= 154.922 kJ/mol
+  iter   26  nfev= 10469  E_best=-17.02446430    64.6 min  ΔFCI= 154.921 kJ/mol
+  iter   27  nfev= 10830  E_best=-17.02446519    66.7 min  ΔFCI= 154.919 kJ/mol
+  iter   28  nfev= 11191  E_best=-17.02446800    69.0 min  ΔFCI= 154.911 kJ/mol
+  iter   29  nfev= 11913  E_best=-17.02447197    73.6 min  ΔFCI= 154.901 kJ/mol
+  iter   30  nfev= 12635  E_best=-17.02447486    78.7 min  ΔFCI= 154.893 kJ/mol
+  iter   31  nfev= 13357  E_best=-17.02448042    83.8 min  ΔFCI= 154.879 kJ/mol
+  iter   32  nfev= 13718  E_best=-17.02449978    86.5 min  ΔFCI= 154.828 kJ/mol
+  iter   33  nfev= 14079  E_best=-17.02455656    88.9 min  ΔFCI= 154.679 kJ/mol
+  iter   34  nfev= 14440  E_best=-17.02457216    91.4 min  ΔFCI= 154.638 kJ/mol
+  iter   35  nfev= 14801  E_best=-17.02457864    94.3 min  ΔFCI= 154.621 kJ/mol
+  iter   36  nfev= 15523  E_best=-17.02458293    99.7 min  ΔFCI= 154.610 kJ/mol
+
+[done] E_VQE=-17.02458293  (total -1286.24150933)  nfev=15523  99.7 min  → vqe_b_20q_no_L20hf.npz
+       ΔFCI = 154.6097 kJ/mol  (chemical accuracy 4.2)
+=== L20 from random
+[b] 20q ne=10 layers=20 gates=180 params=360  FCI(elec)=-17.083470653130007  ecore=-1269.216926
+[FastEnergy] 20q ne=10 dets=252x252=63,504 / 1,048,576  endian=little
+[init] E=-16.48691927  (total -1285.70384567)  ΔFCI=1566.246 kJ/mol  (0.34s/eval → 1 gradient ≈ 2.0 min)
+  iter    1  nfev=  1083  E_best=-16.98380238     6.4 min  ΔFCI= 261.679 kJ/mol
+  iter    2  nfev=  1444  E_best=-17.02048764     8.6 min  ΔFCI= 165.362 kJ/mol
+  iter    3  nfev=  1805  E_best=-17.02427106    10.9 min  ΔFCI= 155.429 kJ/mol
+  iter    4  nfev=  2166  E_best=-17.02453254    13.1 min  ΔFCI= 154.742 kJ/mol
+  iter    5  nfev=  2527  E_best=-17.02458452    15.3 min  ΔFCI= 154.606 kJ/mol
+  iter    6  nfev=  2888  E_best=-17.02458954    17.6 min  ΔFCI= 154.592 kJ/mol
+  iter    7  nfev=  3249  E_best=-17.02459009    19.8 min  ΔFCI= 154.591 kJ/mol
+  iter    8  nfev=  3610  E_best=-17.02459056    22.0 min  ΔFCI= 154.590 kJ/mol
+  iter    9  nfev=  3971  E_best=-17.02459124    24.2 min  ΔFCI= 154.588 kJ/mol
+  iter   10  nfev=  4332  E_best=-17.02459922    26.5 min  ΔFCI= 154.567 kJ/mol
+  iter   11  nfev=  4693  E_best=-17.02462767    28.7 min  ΔFCI= 154.492 kJ/mol
+  iter   12  nfev=  5054  E_best=-17.02468668    30.9 min  ΔFCI= 154.337 kJ/mol
+  iter   13  nfev=  5415  E_best=-17.02483071    33.2 min  ΔFCI= 153.959 kJ/mol
+  iter   14  nfev=  6137  E_best=-17.02499974    38.2 min  ΔFCI= 153.515 kJ/mol
+  iter   15  nfev=  6859  E_best=-17.02515563    43.2 min  ΔFCI= 153.106 kJ/mol
+  iter   16  nfev=  7581  E_best=-17.02520184    48.2 min  ΔFCI= 152.985 kJ/mol
+  iter   17  nfev=  7942  E_best=-17.02555963    50.4 min  ΔFCI= 152.045 kJ/mol
+  iter   18  nfev=  8303  E_best=-17.02568805    52.8 min  ΔFCI= 151.708 kJ/mol
+  iter   19  nfev=  8664  E_best=-17.02571557    55.4 min  ΔFCI= 151.636 kJ/mol
+  iter   20  nfev=  9025  E_best=-17.02572356    58.1 min  ΔFCI= 151.615 kJ/mol
+  iter   21  nfev=  9386  E_best=-17.02572463    60.6 min  ΔFCI= 151.612 kJ/mol
+  iter   22  nfev=  9747  E_best=-17.02573679    63.2 min  ΔFCI= 151.580 kJ/mol
+  iter   23  nfev= 10108  E_best=-17.02576009    65.6 min  ΔFCI= 151.519 kJ/mol
+  iter   24  nfev= 10469  E_best=-17.02580362    68.1 min  ΔFCI= 151.405 kJ/mol
+  iter   25  nfev= 10830  E_best=-17.02592344    70.6 min  ΔFCI= 151.090 kJ/mol
+  iter   26  nfev= 11191  E_best=-17.02635270    73.3 min  ΔFCI= 149.963 kJ/mol
+  iter   27  nfev= 11552  E_best=-17.02637934    75.9 min  ΔFCI= 149.893 kJ/mol
+  iter   28  nfev= 11913  E_best=-17.02665400    78.5 min  ΔFCI= 149.172 kJ/mol
+  iter   29  nfev= 12274  E_best=-17.02669911    80.9 min  ΔFCI= 149.054 kJ/mol
+  iter   30  nfev= 12635  E_best=-17.02671682    83.5 min  ΔFCI= 149.007 kJ/mol
+  iter   31  nfev= 12996  E_best=-17.02672592    86.0 min  ΔFCI= 148.983 kJ/mol
+  iter   32  nfev= 13357  E_best=-17.02673686    88.6 min  ΔFCI= 148.955 kJ/mol
+  iter   33  nfev= 13718  E_best=-17.02675355    91.2 min  ΔFCI= 148.911 kJ/mol
+  iter   34  nfev= 14079  E_best=-17.02679127    93.8 min  ΔFCI= 148.812 kJ/mol
+  iter   35  nfev= 14440  E_best=-17.02695456    96.3 min  ΔFCI= 148.383 kJ/mol
+  iter   36  nfev= 14801  E_best=-17.02742132    98.7 min  ΔFCI= 147.158 kJ/mol
+  iter   37  nfev= 15523  E_best=-17.02793233   104.7 min  ΔFCI= 145.816 kJ/mol
+
+[done] E_VQE=-17.02793233  (total -1286.24485873)  nfev=15523  104.7 min  → vqe_b_20q_no_L20r.npz
+       ΔFCI = 145.8159 kJ/mol  (chemical accuracy 4.2)
+=== L10 from random (대조)
+[b] 20q ne=10 layers=10 gates=90 params=180  FCI(elec)=-17.083470653130007  ecore=-1269.216926
+[FastEnergy] 20q ne=10 dets=252x252=63,504 / 1,048,576  endian=little
+[init] E=-16.83204540  (total -1286.04897179)  ΔFCI=660.117 kJ/mol  (0.28s/eval → 1 gradient ≈ 0.8 min)
+  iter    1  nfev=   543  E_best=-17.01518036     3.0 min  ΔFCI= 179.296 kJ/mol
+  iter    2  nfev=   724  E_best=-17.02377782     4.0 min  ΔFCI= 156.724 kJ/mol
+  iter    3  nfev=   905  E_best=-17.02441030     5.1 min  ΔFCI= 155.063 kJ/mol
+  iter    4  nfev=  1086  E_best=-17.02448147     6.2 min  ΔFCI= 154.876 kJ/mol
+  iter    5  nfev=  1267  E_best=-17.02449828     7.3 min  ΔFCI= 154.832 kJ/mol
+  iter    6  nfev=  1448  E_best=-17.02450019     8.3 min  ΔFCI= 154.827 kJ/mol
+  iter    7  nfev=  1629  E_best=-17.02450065     9.4 min  ΔFCI= 154.826 kJ/mol
+  iter    8  nfev=  1810  E_best=-17.02450081    10.5 min  ΔFCI= 154.825 kJ/mol
+  iter    9  nfev=  1991  E_best=-17.02450210    11.5 min  ΔFCI= 154.822 kJ/mol
+  iter   10  nfev=  2172  E_best=-17.02450455    12.6 min  ΔFCI= 154.816 kJ/mol
+  iter   11  nfev=  2353  E_best=-17.02451270    13.6 min  ΔFCI= 154.794 kJ/mol
+  iter   12  nfev=  2534  E_best=-17.02453569    14.7 min  ΔFCI= 154.734 kJ/mol
+  iter   13  nfev=  2715  E_best=-17.02459399    15.7 min  ΔFCI= 154.581 kJ/mol
+  iter   14  nfev=  3077  E_best=-17.02467003    17.8 min  ΔFCI= 154.381 kJ/mol
+  iter   15  nfev=  3258  E_best=-17.02478718    18.8 min  ΔFCI= 154.073 kJ/mol
+  iter   16  nfev=  3439  E_best=-17.02512299    19.9 min  ΔFCI= 153.192 kJ/mol
+  iter   17  nfev=  3801  E_best=-17.02541803    22.0 min  ΔFCI= 152.417 kJ/mol
+  iter   18  nfev=  3982  E_best=-17.02564755    23.2 min  ΔFCI= 151.815 kJ/mol
+  iter   19  nfev=  4344  E_best=-17.02571918    25.4 min  ΔFCI= 151.627 kJ/mol
+  iter   20  nfev=  4525  E_best=-17.02575838    26.5 min  ΔFCI= 151.524 kJ/mol
+  iter   21  nfev=  4706  E_best=-17.02577649    27.6 min  ΔFCI= 151.476 kJ/mol
+  iter   22  nfev=  4887  E_best=-17.02579993    28.7 min  ΔFCI= 151.414 kJ/mol
+  iter   23  nfev=  5068  E_best=-17.02584082    29.9 min  ΔFCI= 151.307 kJ/mol
+  iter   24  nfev=  5249  E_best=-17.02595042    30.9 min  ΔFCI= 151.019 kJ/mol
+  iter   25  nfev=  5611  E_best=-17.02611219    33.1 min  ΔFCI= 150.595 kJ/mol
+  iter   26  nfev=  5973  E_best=-17.02631116    35.4 min  ΔFCI= 150.072 kJ/mol
+  iter   27  nfev=  6154  E_best=-17.02650789    36.6 min  ΔFCI= 149.556 kJ/mol
+  iter   28  nfev=  6335  E_best=-17.02675987    37.7 min  ΔFCI= 148.894 kJ/mol
+  iter   29  nfev=  6516  E_best=-17.02713473    38.8 min  ΔFCI= 147.910 kJ/mol
+  iter   30  nfev=  6878  E_best=-17.02723729    41.0 min  ΔFCI= 147.641 kJ/mol
+  iter   31  nfev=  7240  E_best=-17.02726383    43.3 min  ΔFCI= 147.571 kJ/mol
+  iter   32  nfev=  7421  E_best=-17.02728704    44.5 min  ΔFCI= 147.510 kJ/mol
+  iter   33  nfev=  7602  E_best=-17.02731628    45.7 min  ΔFCI= 147.433 kJ/mol
+  iter   34  nfev=  7783  E_best=-17.02738586    46.9 min  ΔFCI= 147.251 kJ/mol
+  iter   35  nfev=  7964  E_best=-17.02752378    48.0 min  ΔFCI= 146.889 kJ/mol
+  iter   36  nfev=  8145  E_best=-17.02850388    49.1 min  ΔFCI= 144.315 kJ/mol
+  iter   37  nfev=  8507  E_best=-17.02895976    51.3 min  ΔFCI= 143.118 kJ/mol
+  iter   38  nfev=  8688  E_best=-17.02927548    52.5 min  ΔFCI= 142.289 kJ/mol
+  iter   39  nfev=  8869  E_best=-17.02932650    53.6 min  ΔFCI= 142.155 kJ/mol
+  iter   40  nfev=  9050  E_best=-17.02941977    54.8 min  ΔFCI= 141.911 kJ/mol
+  iter   41  nfev=  9231  E_best=-17.02946570    55.9 min  ΔFCI= 141.790 kJ/mol
+  iter   42  nfev=  9412  E_best=-17.02954739    57.1 min  ΔFCI= 141.576 kJ/mol
+  iter   43  nfev=  9593  E_best=-17.02975967    58.1 min  ΔFCI= 141.018 kJ/mol
+  iter   44  nfev=  9774  E_best=-17.02999862    59.3 min  ΔFCI= 140.391 kJ/mol
+  iter   45  nfev=  9955  E_best=-17.03030840    60.4 min  ΔFCI= 139.577 kJ/mol
+  iter   46  nfev= 10136  E_best=-17.03057155    61.6 min  ΔFCI= 138.887 kJ/mol
+  iter   47  nfev= 10317  E_best=-17.03060222    62.7 min  ΔFCI= 138.806 kJ/mol
+  iter   48  nfev= 10498  E_best=-17.03062373    63.9 min  ΔFCI= 138.750 kJ/mol
+  iter   49  nfev= 10679  E_best=-17.03063906    64.9 min  ΔFCI= 138.709 kJ/mol
+  iter   50  nfev= 10860  E_best=-17.03066742    66.1 min  ΔFCI= 138.635 kJ/mol
+  iter   51  nfev= 11041  E_best=-17.03072069    67.3 min  ΔFCI= 138.495 kJ/mol
+  iter   52  nfev= 11222  E_best=-17.03076547    68.5 min  ΔFCI= 138.377 kJ/mol
+  iter   53  nfev= 11403  E_best=-17.03087357    69.7 min  ΔFCI= 138.094 kJ/mol
+  iter   54  nfev= 11584  E_best=-17.03106558    70.8 min  ΔFCI= 137.590 kJ/mol
+  iter   55  nfev= 11765  E_best=-17.03118560    72.0 min  ΔFCI= 137.274 kJ/mol
+  iter   56  nfev= 11946  E_best=-17.03126156    73.2 min  ΔFCI= 137.075 kJ/mol
+  iter   57  nfev= 12127  E_best=-17.03133867    74.3 min  ΔFCI= 136.873 kJ/mol
+  iter   58  nfev= 12308  E_best=-17.03139997    75.5 min  ΔFCI= 136.712 kJ/mol
+  iter   59  nfev= 12489  E_best=-17.03146192    76.5 min  ΔFCI= 136.549 kJ/mol
+  iter   60  nfev= 12670  E_best=-17.03165112    77.7 min  ΔFCI= 136.052 kJ/mol
+  iter   61  nfev= 13032  E_best=-17.03173483    79.9 min  ΔFCI= 135.832 kJ/mol
+  iter   62  nfev= 13213  E_best=-17.03192035    81.0 min  ΔFCI= 135.345 kJ/mol
+  iter   63  nfev= 13394  E_best=-17.03214791    82.1 min  ΔFCI= 134.748 kJ/mol
+  iter   64  nfev= 13575  E_best=-17.03224797    83.2 min  ΔFCI= 134.485 kJ/mol
+  iter   65  nfev= 13756  E_best=-17.03239823    84.2 min  ΔFCI= 134.091 kJ/mol
+  iter   66  nfev= 14118  E_best=-17.03242513    86.3 min  ΔFCI= 134.020 kJ/mol
+  iter   67  nfev= 14299  E_best=-17.03244147    87.3 min  ΔFCI= 133.977 kJ/mol
+  iter   68  nfev= 14480  E_best=-17.03244720    88.3 min  ΔFCI= 133.962 kJ/mol
+  iter   69  nfev= 14661  E_best=-17.03246795    89.5 min  ΔFCI= 133.908 kJ/mol
+  iter   70  nfev= 14842  E_best=-17.03249721    90.6 min  ΔFCI= 133.831 kJ/mol
+  iter   71  nfev= 15204  E_best=-17.03251451    92.8 min  ΔFCI= 133.785 kJ/mol
+
+[done] E_VQE=-17.03251451  (total -1286.24944091)  nfev=15204  92.8 min  → vqe_b_20q_no_L10r.npz
+       ΔFCI = 133.7853 kJ/mol  (chemical accuracy 4.2)
+=== all done
+

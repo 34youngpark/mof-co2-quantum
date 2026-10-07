@@ -1,0 +1,124 @@
+[d] 20q ne=10 pool=875 ops  FCI(elec)=-21.136379633345307
+[init] E=-20.98358356  ΔFCI=401.166 kJ/mol
+  step   1  op=  74  |g|=2.31e-01  nops=  1  E=-20.98759924  ΔFCI= 390.623 kJ/mol  nfev=  1789  4.5 min
+  step   2  op= 200  |g|=2.09e-01  nops=  2  E=-20.99569028  ΔFCI= 369.380 kJ/mol  nfev=  3561  9.1 min
+  step   3  op= 356  |g|=2.09e-01  nops=  3  E=-21.00377957  ΔFCI= 348.141 kJ/mol  nfev=  5339  13.7 min
+  step   4  op=  62  |g|=1.97e-01  nops=  4  E=-21.00835094  ΔFCI= 336.139 kJ/mol  nfev=  7138  18.6 min
+  step   5  op= 765  |g|=1.95e-01  nops=  5  E=-21.01685586  ΔFCI= 313.810 kJ/mol  nfev=  8940  23.5 min
+  step   6  op= 865  |g|=1.95e-01  nops=  6  E=-21.02534769  ΔFCI= 291.514 kJ/mol  nfev= 10750  28.6 min
+  step   7  op= 109  |g|=1.47e-01  nops=  7  E=-21.02765653  ΔFCI= 285.452 kJ/mol  nfev= 12568  33.7 min
+  step   8  op= 195  |g|=1.47e-01  nops=  8  E=-21.02998063  ΔFCI= 279.351 kJ/mol  nfev= 14385  38.9 min
+  step   9  op= 668  |g|=1.44e-01  nops=  9  E=-21.03200085  ΔFCI= 274.047 kJ/mol  nfev= 16219  44.2 min
+  step  10  op=  79  |g|=1.40e-01  nops= 10  E=-21.03407721  ΔFCI= 268.595 kJ/mol  nfev= 18072  49.7 min
+  step  11  op= 321  |g|=1.41e-01  nops= 11  E=-21.03616609  ΔFCI= 263.111 kJ/mol  nfev= 19922  55.1 min
+  step  12  op= 435  |g|=1.39e-01  nops= 12  E=-21.03928052  ΔFCI= 254.934 kJ/mol  nfev= 21806  60.8 min
+  step  13  op= 127  |g|=1.38e-01  nops= 13  E=-21.04236415  ΔFCI= 246.838 kJ/mol  nfev= 23728  66.6 min
+  step  14  op= 157  |g|=1.32e-01  nops= 14  E=-21.04515419  ΔFCI= 239.512 kJ/mol  nfev= 25677  72.5 min
+  step  15  op= 561  |g|=1.32e-01  nops= 15  E=-21.04790423  ΔFCI= 232.292 kJ/mol  nfev= 27671  78.6 min
+  step  16  op= 230  |g|=1.26e-01  nops= 16  E=-21.05083680  ΔFCI= 224.593 kJ/mol  nfev= 29629  84.7 min
+  step  17  op= 326  |g|=1.28e-01  nops= 17  E=-21.05388143  ΔFCI= 216.599 kJ/mol  nfev= 31563  90.7 min
+  step  18  op= 416  |g|=1.21e-01  nops= 18  E=-21.05572254  ΔFCI= 211.765 kJ/mol  nfev= 33469  96.6 min
+  step  19  op= 608  |g|=1.21e-01  nops= 19  E=-21.05758104  ΔFCI= 206.886 kJ/mol  nfev= 35343  102.5 min
+  step  20  op= 656  |g|=1.19e-01  nops= 20  E=-21.06074676  ΔFCI= 198.574 kJ/mol  nfev= 37328  108.8 min
+  step  21  op= 500  |g|=1.15e-01  nops= 21  E=-21.06365933  ΔFCI= 190.927 kJ/mol  nfev= 39346  115.2 min
+  step  22  op= 578  |g|=1.04e-01  nops= 22  E=-21.06502919  ΔFCI= 187.331 kJ/mol  nfev= 41445  121.9 min
+  step  23  op= 290  |g|=1.04e-01  nops= 23  E=-21.06640702  ΔFCI= 183.713 kJ/mol  nfev= 43439  128.3 min
+  step  24  op= 678  |g|=9.96e-02  nops= 24  E=-21.06745613  ΔFCI= 180.959 kJ/mol  nfev= 45593  135.3 min
+  step  25  op= 696  |g|=1.02e-01  nops= 25  E=-21.06914259  ΔFCI= 176.531 kJ/mol  nfev= 47659  142.1 min
+  step  26  op= 791  |g|=1.00e-01  nops= 26  E=-21.07020839  ΔFCI= 173.733 kJ/mol  nfev= 49683  148.7 min
+  step  27  op= 809  |g|=1.01e-01  nops= 27  E=-21.07182192  ΔFCI= 169.496 kJ/mol  nfev= 51773  155.5 min
+  step  28  op= 691  |g|=9.46e-02  nops= 28  E=-21.07276498  ΔFCI= 167.020 kJ/mol  nfev= 53846  162.4 min
+  step  29  op= 709  |g|=9.71e-02  nops= 29  E=-21.07427628  ΔFCI= 163.052 kJ/mol  nfev= 55870  169.2 min
+  step  30  op= 778  |g|=9.60e-02  nops= 30  E=-21.07523611  ΔFCI= 160.532 kJ/mol  nfev= 58089  176.7 min
+  step  31  op= 796  |g|=9.93e-02  nops= 31  E=-21.07683357  ΔFCI= 156.338 kJ/mol  nfev= 60291  184.2 min
+  step  32  op= 560  |g|=8.78e-02  nops= 32  E=-21.07805527  ΔFCI= 153.131 kJ/mol  nfev= 62474  191.6 min
+  step  33  op= 152  |g|=8.74e-02  nops= 33  E=-21.07925244  ΔFCI= 149.987 kJ/mol  nfev= 64704  199.2 min
+  step  34  op= 132  |g|=8.57e-02  nops= 34  E=-21.08038585  ΔFCI= 147.012 kJ/mol  nfev= 66878  206.7 min
+  step  35  op= 436  |g|=8.59e-02  nops= 35  E=-21.08152812  ΔFCI= 144.013 kJ/mol  nfev= 69244  214.8 min
+  step  36  op= 408  |g|=8.52e-02  nops= 36  E=-21.08247182  ΔFCI= 141.535 kJ/mol  nfev= 71479  222.5 min
+  step  37  op= 616  |g|=8.62e-02  nops= 37  E=-21.08343290  ΔFCI= 139.012 kJ/mol  nfev= 73803  230.7 min
+  step  38  op= 655  |g|=8.48e-02  nops= 38  E=-21.08507428  ΔFCI= 134.702 kJ/mol  nfev= 76181  239.0 min
+  step  39  op= 525  |g|=8.24e-02  nops= 39  E=-21.08666343  ΔFCI= 130.530 kJ/mol  nfev= 78335  246.6 min
+  step  40  op= 506  |g|=8.13e-02  nops= 40  E=-21.08813869  ΔFCI= 126.657 kJ/mol  nfev= 80458  254.1 min
+  step  41  op= 650  |g|=8.07e-02  nops= 41  E=-21.08963115  ΔFCI= 122.738 kJ/mol  nfev= 82842  262.6 min
+  step  42  op= 651  |g|=7.67e-02  nops= 42  E=-21.09096595  ΔFCI= 119.234 kJ/mol  nfev= 85155  270.9 min
+  step  43  op= 531  |g|=7.60e-02  nops= 43  E=-21.09227128  ΔFCI= 115.806 kJ/mol  nfev= 87481  279.2 min
+  step  44  op= 505  |g|=7.50e-02  nops= 44  E=-21.09353967  ΔFCI= 112.476 kJ/mol  nfev= 89820  287.6 min
+  step  45  op= 815  |g|=7.40e-02  nops= 45  E=-21.09455739  ΔFCI= 109.804 kJ/mol  nfev= 92218  296.3 min
+  step  46  op= 715  |g|=7.58e-02  nops= 46  E=-21.09562481  ΔFCI= 107.002 kJ/mol  nfev= 94865  305.9 min
+  step  47  op= 625  |g|=7.40e-02  nops= 47  E=-21.09687322  ΔFCI= 103.724 kJ/mol  nfev= 98491  319.2 min
+  step  48  op= 368  |g|=7.38e-02  nops= 48  E=-21.09733218  ΔFCI= 102.519 kJ/mol  nfev=100833  327.7 min
+  step  49  op= 631  |g|=7.03e-02  nops= 49  E=-21.09843953  ΔFCI=  99.612 kJ/mol  nfev=103237  336.5 min
+  step  50  op= 501  |g|=7.03e-02  nops= 50  E=-21.09953785  ΔFCI=  96.728 kJ/mol  nfev=105654  345.4 min
+  step  51  op= 313  |g|=7.01e-02  nops= 51  E=-21.10002743  ΔFCI=  95.443 kJ/mol  nfev=108136  354.5 min
+  step  52  op= 573  |g|=7.20e-02  nops= 52  E=-21.10045723  ΔFCI=  94.314 kJ/mol  nfev=110420  362.9 min
+  step  53  op= 117  |g|=6.97e-02  nops= 53  E=-21.10094080  ΔFCI=  93.045 kJ/mol  nfev=112606  371.1 min
+  step  54  op= 169  |g|=7.23e-02  nops= 54  E=-21.10137292  ΔFCI=  91.910 kJ/mol  nfev=114965  380.0 min
+  step  55  op= 615  |g|=6.10e-02  nops= 55  E=-21.10185030  ΔFCI=  90.657 kJ/mol  nfev=117391  389.1 min
+  step  56  op= 403  |g|=6.01e-02  nops= 56  E=-21.10231333  ΔFCI=  89.441 kJ/mol  nfev=119886  398.4 min
+  step  57  op= 799  |g|=6.00e-02  nops= 57  E=-21.10288519  ΔFCI=  87.940 kJ/mol  nfev=122510  408.2 min
+  step  58  op= 699  |g|=6.05e-02  nops= 58  E=-21.10346717  ΔFCI=  86.412 kJ/mol  nfev=125621  420.0 min
+  step  59  op= 740  |g|=5.87e-02  nops= 59  E=-21.10391224  ΔFCI=  85.243 kJ/mol  nfev=128035  429.2 min
+  step  60  op= 840  |g|=5.81e-02  nops= 60  E=-21.10434469  ΔFCI=  84.108 kJ/mol  nfev=130399  438.2 min
+  step  61  op= 814  |g|=5.67e-02  nops= 61  E=-21.10461108  ΔFCI=  83.408 kJ/mol  nfev=132711  447.1 min
+  step  62  op= 714  |g|=5.66e-02  nops= 62  E=-21.10487607  ΔFCI=  82.713 kJ/mol  nfev=136103  460.1 min
+  step  63  op= 706  |g|=5.50e-02  nops= 63  E=-21.10536658  ΔFCI=  81.425 kJ/mol  nfev=138497  469.4 min
+  step  64  op= 806  |g|=5.55e-02  nops= 64  E=-21.10586217  ΔFCI=  80.124 kJ/mol  nfev=141031  479.2 min
+  step  65  op= 626  |g|=5.57e-02  nops= 65  E=-21.10656995  ΔFCI=  78.265 kJ/mol  nfev=143643  489.4 min
+  step  66  op= 530  |g|=5.55e-02  nops= 66  E=-21.10728122  ΔFCI=  76.398 kJ/mol  nfev=146603  500.8 min
+  step  67  op=   5  |g|=5.73e-02  nops= 67  E=-21.10827625  ΔFCI=  73.785 kJ/mol  nfev=149377  511.6 min
+  step  68  op= 465  |g|=5.51e-02  nops= 68  E=-21.10866609  ΔFCI=  72.762 kJ/mol  nfev=152235  522.8 min
+  step  69  op= 212  |g|=5.25e-02  nops= 69  E=-21.10903473  ΔFCI=  71.794 kJ/mol  nfev=155109  534.0 min
+  step  70  op= 737  |g|=5.10e-02  nops= 70  E=-21.10937184  ΔFCI=  70.909 kJ/mol  nfev=157644  544.0 min
+  step  71  op= 253  |g|=5.11e-02  nops= 71  E=-21.10970743  ΔFCI=  70.028 kJ/mol  nfev=160622  555.7 min
+  step  72  op= 837  |g|=5.08e-02  nops= 72  E=-21.11004005  ΔFCI=  69.155 kJ/mol  nfev=163836  568.3 min
+  step  73  op= 590  |g|=5.17e-02  nops= 73  E=-21.11039641  ΔFCI=  68.219 kJ/mol  nfev=166922  580.5 min
+  step  74  op= 362  |g|=5.05e-02  nops= 74  E=-21.11073735  ΔFCI=  67.324 kJ/mol  nfev=169951  592.6 min
+  step  75  op= 692  |g|=5.05e-02  nops= 75  E=-21.11099520  ΔFCI=  66.647 kJ/mol  nfev=173225  605.7 min
+  step  76  op= 490  |g|=5.06e-02  nops= 76  E=-21.11131956  ΔFCI=  65.795 kJ/mol  nfev=176134  617.4 min
+  step  77  op=  30  |g|=4.96e-02  nops= 77  E=-21.11208593  ΔFCI=  63.783 kJ/mol  nfev=179370  630.5 min
+  step  78  op= 378  |g|=5.13e-02  nops= 78  E=-21.11242022  ΔFCI=  62.905 kJ/mol  nfev=182546  643.3 min
+  step  79  op= 278  |g|=4.99e-02  nops= 79  E=-21.11275237  ΔFCI=  62.033 kJ/mol  nfev=186060  657.6 min
+  step  80  op= 792  |g|=4.92e-02  nops= 80  E=-21.11299622  ΔFCI=  61.393 kJ/mol  nfev=189272  670.6 min
+  step  81  op=  29  |g|=4.90e-02  nops= 81  E=-21.11335454  ΔFCI=  60.452 kJ/mol  nfev=192502  683.7 min
+  step  82  op= 850  |g|=4.72e-02  nops= 82  E=-21.11364202  ΔFCI=  59.698 kJ/mol  nfev=195418  695.7 min
+  step  83  op= 750  |g|=4.72e-02  nops= 83  E=-21.11393156  ΔFCI=  58.937 kJ/mol  nfev=198432  708.3 min
+  step  84  op= 415  |g|=4.53e-02  nops= 84  E=-21.11419982  ΔFCI=  58.233 kJ/mol  nfev=201801  722.4 min
+  step  85  op= 603  |g|=4.46e-02  nops= 85  E=-21.11445787  ΔFCI=  57.556 kJ/mol  nfev=204587  734.0 min
+  step  86  op=   4  |g|=4.40e-02  nops= 86  E=-21.11475356  ΔFCI=  56.779 kJ/mol  nfev=207733  747.1 min
+  step  87  op=  11  |g|=4.33e-02  nops= 87  E=-21.11538219  ΔFCI=  55.129 kJ/mol  nfev=210455  758.3 min
+  step  88  op= 355  |g|=4.15e-02  nops= 88  E=-21.11570589  ΔFCI=  54.279 kJ/mol  nfev=213366  770.3 min
+  step  89  op= 188  |g|=3.98e-02  nops= 89  E=-21.11586574  ΔFCI=  53.859 kJ/mol  nfev=217190  786.2 min
+  step  90  op= 351  |g|=3.98e-02  nops= 90  E=-21.11616433  ΔFCI=  53.075 kJ/mol  nfev=220855  801.6 min
+  step  91  op=  92  |g|=3.97e-02  nops= 91  E=-21.11632232  ΔFCI=  52.660 kJ/mol  nfev=224817  818.5 min
+  step  92  op= 491  |g|=3.94e-02  nops= 92  E=-21.11652211  ΔFCI=  52.136 kJ/mol  nfev=228803  835.5 min
+  step  93  op=  84  |g|=3.74e-02  nops= 93  E=-21.11667545  ΔFCI=  51.733 kJ/mol  nfev=231497  847.1 min
+  step  94  op= 343  |g|=3.70e-02  nops= 94  E=-21.11679167  ΔFCI=  51.428 kJ/mol  nfev=235246  863.1 min
+  step  95  op= 225  |g|=3.69e-02  nops= 95  E=-21.11704584  ΔFCI=  50.761 kJ/mol  nfev=238440  876.8 min
+  step  96  op= 847  |g|=3.68e-02  nops= 96  E=-21.11722341  ΔFCI=  50.295 kJ/mol  nfev=242522  894.4 min
+  step  97  op= 196  |g|=3.59e-02  nops= 97  E=-21.11736082  ΔFCI=  49.934 kJ/mol  nfev=246334  910.6 min
+  step  98  op= 325  |g|=3.58e-02  nops= 98  E=-21.11759927  ΔFCI=  49.308 kJ/mol  nfev=249870  925.7 min
+  step  99  op= 747  |g|=3.57e-02  nops= 99  E=-21.11776591  ΔFCI=  48.870 kJ/mol  nfev=253924  943.3 min
+  step 100  op= 383  |g|=3.45e-02  nops=100  E=-21.11791878  ΔFCI=  48.469 kJ/mol  nfev=257597  960.9 min
+  step 101  op= 218  |g|=3.43e-02  nops=101  E=-21.11801846  ΔFCI=  48.207 kJ/mol  nfev=261493  979.5 min
+  step 102  op= 265  |g|=3.42e-02  nops=102  E=-21.11816666  ΔFCI=  47.818 kJ/mol  nfev=264998  996.3 min
+  step 103  op= 453  |g|=3.43e-02  nops=103  E=-21.11831617  ΔFCI=  47.426 kJ/mol  nfev=268624  1013.9 min
+  step 104  op= 243  |g|=3.32e-02  nops=104  E=-21.11841004  ΔFCI=  47.179 kJ/mol  nfev=271428  1027.5 min
+  step 105  op= 591  |g|=3.22e-02  nops=105  E=-21.11854445  ΔFCI=  46.826 kJ/mol  nfev=275726  1048.4 min
+  step 106  op= 320  |g|=3.19e-02  nops=106  E=-21.11865341  ΔFCI=  46.540 kJ/mol  nfev=278978  1064.2 min
+  step 107  op= 104  |g|=3.17e-02  nops=107  E=-21.11876110  ΔFCI=  46.257 kJ/mol  nfev=282784  1082.8 min
+  step 108  op= 283  |g|=3.14e-02  nops=108  E=-21.11888779  ΔFCI=  45.925 kJ/mol  nfev=286936  1103.1 min
+  step 109  op= 760  |g|=3.13e-02  nops=109  E=-21.11901959  ΔFCI=  45.579 kJ/mol  nfev=290560  1120.9 min
+  step 110  op= 860  |g|=3.17e-02  nops=110  E=-21.11915291  ΔFCI=  45.229 kJ/mol  nfev=294423  1140.0 min
+  step 111  op= 781  |g|=2.94e-02  nops=111  E=-21.11924692  ΔFCI=  44.982 kJ/mol  nfev=298417  1159.7 min
+  step 112  op= 681  |g|=2.90e-02  nops=112  E=-21.11933784  ΔFCI=  44.743 kJ/mol  nfev=302318  1179.2 min
+  step 113  op= 350  |g|=2.84e-02  nops=113  E=-21.11949015  ΔFCI=  44.343 kJ/mol  nfev=306124  1198.2 min
+  step 114  op= 682  |g|=2.76e-02  nops=114  E=-21.11956792  ΔFCI=  44.139 kJ/mol  nfev=309833  1216.9 min
+  step 115  op= 782  |g|=2.74e-02  nops=115  E=-21.11964393  ΔFCI=  43.940 kJ/mol  nfev=313443  1235.1 min
+  step 116  op=  36  |g|=2.71e-02  nops=116  E=-21.11990736  ΔFCI=  43.248 kJ/mol  nfev=318005  1258.1 min
+  step 117  op= 231  |g|=2.68e-02  nops=117  E=-21.12004616  ΔFCI=  42.884 kJ/mol  nfev=322473  1280.6 min
+  step 118  op= 205  |g|=2.62e-02  nops=118  E=-21.12017531  ΔFCI=  42.544 kJ/mol  nfev=326250  1299.6 min
+  step 119  op= 674  |g|=2.61e-02  nops=119  E=-21.12023556  ΔFCI=  42.386 kJ/mol  nfev=328604  1311.6 min
+  step 120  op= 614  |g|=2.62e-02  nops=120  E=-21.12030769  ΔFCI=  42.197 kJ/mol  nfev=332415  1331.3 min
+
+[done] E_ADAPT=-21.12030769  nops=120  nfev=332415  1331.3 min  ΔFCI=42.1969 kJ/mol
